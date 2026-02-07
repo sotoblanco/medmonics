@@ -11,7 +11,7 @@ from typing import Optional, Dict, List
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from medmonics.pipeline import MedMnemonicPipeline, MnemonicResponse, BboxAnalysisResponse, QuizItem
+from medmonics.pipeline import MedMnemonicPipeline, MnemonicResponse, BboxAnalysisResponse, QuizItem, QuizList
 
 # Load environment variables
 load_dotenv()
@@ -86,10 +86,11 @@ def check_batch_status(job_name: str = None) -> Dict:
             "message": f"Failed to get job status: {e}"
         }
 
-def retrieve_and_finalize(job_name: str = None) -> int:
+def retrieve_and_finalize(job_name: str = None, storage_backend=None) -> int:
     """
     Retrieve batch results from inlined_responses and finalize them.
     Returns the number of items successfully processed.
+    If storage_backend is provided, saves using that backend. Otherwise saves locally.
     """
     client = get_client()
     
@@ -184,37 +185,55 @@ def retrieve_and_finalize(job_name: str = None) -> int:
             print(f"⚠️  Bbox analysis failed for item {i}, using empty bbox data: {e}")
             bbox_data = BboxAnalysisResponse(boxes=[])
         
-        # Save to standard location
-        timestamp = int(time.time() * 1000)
         specialty = staged.get("input", "Batch_Import")
-        specialty_slug = specialty.replace(" ", "_").lower()
-        folder_name = f"{timestamp}_{i}_{mnemonic_data.topic[:30].replace(' ', '_')}"
         
-        final_folder = os.path.join(STORAGE_DIR, specialty_slug, folder_name)
-        os.makedirs(final_folder, exist_ok=True)
-        
-        # Save data.json
-        all_data = {
-            "mnemonic_data": mnemonic_data.model_dump(),
-            "bbox_data": bbox_data.model_dump(),
-            "quiz_data": {"quizzes": [q.model_dump() for q in quiz_items]},
-            "metadata": {
-                "topic_id": f"batch-{i}",
-                "timestamp": timestamp,
-                "specialty": specialty,
-                "batch_job": job_name
+        if storage_backend:
+            # Use provided storage backend (GCS, etc)
+            try:
+                # Need QuizList object
+                quiz_list = QuizList(quizzes=quiz_items)
+                path = storage_backend.save_generation(
+                    mnemonic_data=mnemonic_data,
+                    bbox_data=bbox_data,
+                    quiz_data=quiz_list,
+                    image_bytes=image_bytes,
+                    specialty=specialty
+                )
+                print(f"☁️ Saved to Cloud/Storage: {path}")
+                count += 1
+            except Exception as e:
+                print(f"❌ Error saving to storage backend: {e}")
+        else:
+            # Save to standard local location (Legacy/Script usage)
+            timestamp = int(time.time() * 1000)
+            specialty_slug = specialty.replace(" ", "_").lower()
+            folder_name = f"{timestamp}_{i}_{mnemonic_data.topic[:30].replace(' ', '_')}"
+            
+            final_folder = os.path.join(STORAGE_DIR, specialty_slug, folder_name)
+            os.makedirs(final_folder, exist_ok=True)
+            
+            # Save data.json
+            all_data = {
+                "mnemonic_data": mnemonic_data.model_dump(),
+                "bbox_data": bbox_data.model_dump(),
+                "quiz_data": {"quizzes": [q.model_dump() for q in quiz_items]},
+                "metadata": {
+                    "topic_id": f"batch-{i}",
+                    "timestamp": timestamp,
+                    "specialty": specialty,
+                    "batch_job": job_name
+                }
             }
-        }
-        
-        with open(os.path.join(final_folder, "data.json"), "w", encoding="utf-8") as df:
-            json.dump(all_data, df, indent=2, ensure_ascii=False)
-        
-        # Save image
-        with open(os.path.join(final_folder, "image.png"), "wb") as imf:
-            imf.write(image_bytes)
-        
-        print(f"💾 Saved to: {final_folder}")
-        count += 1
+            
+            with open(os.path.join(final_folder, "data.json"), "w", encoding="utf-8") as df:
+                json.dump(all_data, df, indent=2, ensure_ascii=False)
+            
+            # Save image
+            with open(os.path.join(final_folder, "image.png"), "wb") as imf:
+                imf.write(image_bytes)
+            
+            print(f"💾 Saved to: {final_folder}")
+            count += 1
     
     print(f"\n🎉 Finalized {count}/{len(staging_items)} items successfully!")
     return count

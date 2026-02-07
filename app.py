@@ -12,12 +12,51 @@ from PIL import Image, ImageDraw, ImageFont
 from medmonics.pipeline import MedMnemonicPipeline, MnemonicResponse, QuizList, BboxAnalysisResponse, Association
 from medmonics.data_loader import parse_jsonl_results
 from scripts import batch_submit, batch_retrieve
+from medmonics.storage import LocalStorage, GCSBackend
+import tomllib
 from dotenv import load_dotenv
+
 
 # Load variables
 load_dotenv()
 
-# Define storage path
+# Initialize Storage
+@st.cache_resource
+def get_storage():
+    secrets = {}
+    
+    # 1. Try Streamlit secrets (Cloud / .streamlit/secrets.toml)
+    try:
+        if hasattr(st, "secrets") and "gcp_service_account" in st.secrets:
+            secrets = st.secrets
+    except Exception:
+        # Secrets file not found, will fall back to local secrets.toml
+        pass
+    
+    # 2. Fallback: Try loading secrets.toml from root (Local Dev convenience)
+    if "gcp_service_account" not in secrets and os.path.exists("secrets.toml"):
+        try:
+            with open("secrets.toml", "rb") as f:
+                secrets = tomllib.load(f)
+        except Exception as e:
+            st.warning(f"Found secrets.toml but failed to load: {e}")
+
+    # Initialize GCS if secrets found
+    if "gcp_service_account" in secrets:
+        try:
+            return GCSBackend(
+                bucket_name=secrets["general"]["bucket_name"],
+                service_account_info=secrets["gcp_service_account"]
+            )
+        except Exception as e:
+            st.error(f"Failed to initialize GCS Backend: {e}")
+            return LocalStorage()
+            
+    return LocalStorage()
+
+storage_backend = get_storage()
+
+# Define storage path for local operations (Batch)
 STORAGE_DIR = Path("generations")
 STORAGE_DIR.mkdir(exist_ok=True)
 
@@ -61,99 +100,50 @@ def slugify(text):
     return text[:30]
 
 def save_generation(mnemonic_data, bbox_data, quiz_data, image_bytes, specialty="General", parent_id=None):
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    topic_slug = slugify(mnemonic_data.topic)
-    
-    # Create specialty subfolder
-    specialty_slug = slugify(specialty) if specialty else "general"
-    specialty_folder = STORAGE_DIR / specialty_slug
-    specialty_folder.mkdir(parents=True, exist_ok=True)
-    
-    folder_path = specialty_folder / f"{timestamp}_{topic_slug}"
-    folder_path.mkdir(parents=True, exist_ok=True)
-    
-    # Save Image
-    with open(folder_path / "image.png", "wb") as f:
-        f.write(image_bytes)
-    
-    # Generate unique ID for this generation
-    topic_id = str(uuid.uuid4())
-    
-    # Save Data
-    all_data = {
-        "mnemonic_data": mnemonic_data.model_dump(),
-        "bbox_data": bbox_data.model_dump(),
-        "quiz_data": quiz_data.model_dump(),
-        "metadata": {
-            "timestamp": timestamp,
-            "topic": mnemonic_data.topic,
-            "specialty": specialty,
-            "topic_id": topic_id,
-            "parent_id": parent_id
-        }
-    }
-    with open(folder_path / "data.json", "w", encoding="utf-8") as f:
-        json.dump(all_data, f, indent=2, ensure_ascii=False)
-    
-    return folder_path
+    return storage_backend.save_generation(
+        mnemonic_data, bbox_data, quiz_data, image_bytes, specialty, parent_id
+    )
 
 def list_generations(specialty_filter=None):
-    if not STORAGE_DIR.exists():
-        return []
-    
-    all_folders = []
-    
-    # Scan all specialty subfolders
-    for item in STORAGE_DIR.iterdir():
-        if item.is_dir():
-            # Check if it's a specialty folder (contains subfolders with data.json)
-            sub_items = list(item.iterdir())
-            if sub_items and any((s / "data.json").exists() for s in sub_items if s.is_dir()):
-                # It's a specialty folder
-                if specialty_filter is None or item.name == slugify(specialty_filter):
-                    for gen_folder in item.iterdir():
-                        if gen_folder.is_dir() and (gen_folder / "data.json").exists():
-                            all_folders.append(gen_folder)
-            elif (item / "data.json").exists():
-                # Legacy: direct generation folder (no specialty)
-                if specialty_filter is None or specialty_filter == "General":
-                    all_folders.append(item)
-    
-    # Sort by timestamp (prefix) descending
-    return sorted(all_folders, key=lambda x: x.name, reverse=True)
+    return storage_backend.list_generations(specialty_filter)
 
 def load_generation(folder_path):
-    with open(folder_path / "data.json", "r", encoding="utf-8") as f:
-        all_data = json.load(f)
-    
-    with open(folder_path / "image.png", "rb") as f:
-        image_bytes = f.read()
-    
-    # Reconstruct Pydantic models
-    mnemonic_data = MnemonicResponse(**all_data["mnemonic_data"])
-    bbox_data = BboxAnalysisResponse(**all_data["bbox_data"])
-    quiz_data = QuizList(**all_data["quiz_data"])
-    metadata = all_data.get("metadata", {})
-    
-    return mnemonic_data, bbox_data, quiz_data, image_bytes, metadata
+    return storage_backend.load_generation(folder_path)
 
-@st.cache_data
+@st.cache_data(ttl=60)
 def get_all_challenge_items():
     challenge_pool = []
-    folders = list_generations()
+    try:
+        folders = list_generations()
+    except Exception as e:
+         # st.error(f"Error listing generations: {e}")
+         return []
+
     for folder in folders:
         try:
-            m_data, b_data, q_data, i_bytes, meta = load_generation(folder)
-            for quiz in q_data.quizzes:
-                challenge_pool.append({
-                    "quiz": quiz,
-                    "image_bytes": i_bytes,
-                    "bbox_data": b_data,
-                    "topic": m_data.topic,
-                    "mnemonic_data": m_data.model_dump()
-                })
+            # folder is a dict with 'identifier'
+            m_data, b_data, q_data, i_bytes, meta = load_generation(folder['identifier'])
+            
+            # Helper to handle dict vs object mismatch during transition
+            if isinstance(q_data, dict):
+                 q_data = QuizList(**q_data)
+            if isinstance(m_data, dict):
+                 m_data = MnemonicResponse(**m_data)
+            if isinstance(b_data, dict):
+                 b_data = BboxAnalysisResponse(**b_data)
+
+            if q_data and q_data.quizzes:
+                for quiz in q_data.quizzes:
+                    challenge_pool.append({
+                        "quiz": quiz,
+                        "image_bytes": i_bytes,
+                        "bbox_data": b_data,
+                        "topic": m_data.topic,
+                        "mnemonic_data": m_data.model_dump()
+                    })
         except Exception as e:
             # Skip corrupted folders
+            # st.warning(f"Error loading {folder.get('name', 'unknown')}: {e}")
             continue
     return challenge_pool
 
@@ -291,35 +281,75 @@ with st.sidebar:
         theme = "Professional Educator"
     
     st.divider()
-    st.markdown("### 🏺 Local History")
-    history_filter = st.selectbox("Filter by Specialty:", ["All"] + SPECIALTIES)
-    previous_gens = list_generations(None if history_filter == "All" else history_filter)
-    if previous_gens:
-        gen_names = {g.name: g for g in previous_gens}
-        selected_gen_name = st.selectbox("Load previous mnemonic:", 
-                                         ["-- Select --"] + list(gen_names.keys()))
+    st.divider()
+    
+    # Auto-refreshing history component
+    @st.fragment(run_every=30)
+    def render_history_sidebar():
+        st.markdown("### 🏺 History (Live)")
         
-        if selected_gen_name != "-- Select --":
-            if st.button("Load Selected"):
-                folder = gen_names[selected_gen_name]
-                try:
-                    m_data, b_data, q_data, i_bytes, meta = load_generation(folder)
-                    st.session_state['mnemonic_data'] = m_data
-                    st.session_state['bbox_data'] = b_data
-                    st.session_state['quiz_data'] = q_data
-                    st.session_state['image_bytes'] = i_bytes
-                    # Store topic_id as current_generation_id for recursive linking
-                    st.session_state['current_generation_id'] = meta.get('topic_id')
-                    st.session_state['parent_id_for_save'] = meta.get('parent_id') # If loaded, save inherits? Or N/A as it's already saved.
-                     
-                    st.success(f"Loaded: {selected_gen_name}")
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"Failed to load: {e}")
-    else:
-        st.write("No saved generations found.")
+        # 1. Fetch ALL generations first to find available folders
+        all_gens = list_generations(None)
+        
+        # 2. Extract unique folder names (categories) from identifiers
+        # Identifier format expected: "Folder/Timestamp_Topic"
+        available_folders = set()
+        for g in all_gens:
+            parts = g['identifier'].split('/')
+            if len(parts) > 1:
+                available_folders.add(parts[0])
+            else:
+                available_folders.add("Uncategorized")
+        
+        sorted_folders = sorted(list(available_folders))
+        
+        # 3. Dynamic Filter
+        history_filter = st.selectbox("Filter by Folder:", ["All"] + sorted_folders)
+        
+        # 4. Filter the list based on selection
+        if history_filter == "All":
+            previous_gens = all_gens
+        else:
+            previous_gens = [g for g in all_gens if g['identifier'].startswith(f"{history_filter}/")]
+        
+        if previous_gens:
+            # previous_gens is list of dicts: {'name': ..., 'identifier': ...}
+            gen_names = {g['name']: g['identifier'] for g in previous_gens}
+            selected_gen_name = st.selectbox("Load previous mnemonic:", 
+                                             ["-- Select --"] + list(gen_names.keys()))
+            
+            if selected_gen_name != "-- Select --":
+                if st.button("Load Selected"):
+                    folder_id = gen_names[selected_gen_name]
+                    try:
+                        m_data, b_data, q_data, i_bytes, meta = load_generation(folder_id)
+                        
+                        # Convert dicts back to Pydantic models if they are dicts
+                        if isinstance(m_data, dict):
+                            m_data = MnemonicResponse(**m_data)
+                        if isinstance(b_data, dict):
+                            b_data = BboxAnalysisResponse(**b_data)
+                        if isinstance(q_data, dict):
+                            q_data = QuizList(**q_data)
+                            
+                        st.session_state['mnemonic_data'] = m_data
+                        st.session_state['bbox_data'] = b_data
+                        st.session_state['quiz_data'] = q_data
+                        st.session_state['image_bytes'] = i_bytes
+                        # Store topic_id as current_generation_id for recursive linking
+                        st.session_state['current_generation_id'] = meta.get('topic_id')
+                        st.session_state['parent_id_for_save'] = meta.get('parent_id')
+                        
+                        st.success(f"Loaded: {selected_gen_name}")
+                        st.rerun()
+                    except Exception as e:
+                        st.error(f"Failed to load: {e}")
+        else:
+            st.write("No saved generations found.")
 
-    st.info("MedMnemonic AI uses Gemini to create memorable stories and visual aids for medical students.")
+    render_history_sidebar()
+
+    st.info("MedMnemonic AI uses Gemini to store creations in the cloud.")
 
 def run_generation_pipeline(topic, language, theme, visual_style="cartoon", specialty="General", parent_id=None):
     if 'last_autosave_path' in st.session_state:
@@ -358,7 +388,7 @@ def run_generation_pipeline(topic, language, theme, visual_style="cartoon", spec
             # AUTOSAVE
             try:
                 st.write("Step 6: Autosaving mnemonic...")
-                saved_path = save_generation(
+                saved_path_id = save_generation(
                     mnemonic_data,
                     bbox_data,
                     quiz_data,
@@ -366,7 +396,8 @@ def run_generation_pipeline(topic, language, theme, visual_style="cartoon", spec
                     specialty=specialty,
                     parent_id=parent_id
                 )
-                st.session_state['last_autosave_path'] = saved_path.name
+                # Store the ID/Name for display
+                st.session_state['last_autosave_path'] = saved_path_id
                 get_all_challenge_items.clear()
             except Exception as save_err:
                 st.warning(f"Autosave failed: {save_err}")
@@ -390,7 +421,7 @@ st.markdown("""
 """)
 
 # TOP LEVEL TABS
-main_tabs = st.tabs(["✨ Generator", "🧠 Global Challenge", "🚀 Batch Prep", "📂 Batch Results"])
+main_tabs = st.tabs(["✨ Generator", "🧠 Global Challenge", "🚀 Batch Prep"])
 
 # --- TAB 1: GENERATOR (Original Flow) ---
 with main_tabs[0]:
@@ -416,7 +447,7 @@ with main_tabs[0]:
             else:
                 if st.button("💾 Save this Mnemonic"):
                     try:
-                        path = save_generation(
+                        path_id = save_generation(
                             st.session_state['mnemonic_data'],
                             st.session_state['bbox_data'],
                             st.session_state['quiz_data'],
@@ -425,7 +456,7 @@ with main_tabs[0]:
                             specialty=specialty
                         )
                         get_all_challenge_items.clear()
-                        st.success(f"Saved to: {path.name}")
+                        st.success(f"Saved to: {path_id}")
                     except Exception as e:
                         st.error(f"Error saving: {e}")
 
@@ -672,13 +703,7 @@ with main_tabs[2]:
                 del st.session_state['batch_markdown']
                 st.rerun()
 
-    st.divider()
-    with st.expander("📂 Current Batch File Content"):
-        if os.path.exists(batch_submit.INPUT_FILE):
-            with open(batch_submit.INPUT_FILE, "r") as f:
-                st.json(json.load(f))
-        else:
-            st.write("No batch input file found.")
+
     
     st.divider()
     st.subheader("📊 Batch Job Status")
@@ -696,214 +721,16 @@ with main_tabs[2]:
         
         if status.get('state') == 'JOB_STATE_SUCCEEDED':
             st.success(f"Job completed! Ready to retrieve results.")
-            st.write("Use the Batch Results tab to view the output.")
-
-
-# --- TAB 4: BATCH RESULTS ---
-with main_tabs[3]:
-    st.header("📂 Batch Results Viewer")
-    
-    # storage path for batch runs
-    BATCH_RUNS_DIR = STORAGE_DIR / "batch_runs"
-    
-    if not BATCH_RUNS_DIR.exists():
-        st.warning("No batch runs directory found.")
-    else:
-        # List .jsonl files
-        jsonl_files = list(BATCH_RUNS_DIR.glob("*.jsonl"))
-        jsonl_files.sort(key=lambda x: x.stat().st_mtime, reverse=True)
-        
-        if not jsonl_files:
-            st.info("No result files found in generations/batch_runs/")
-        else:
-            selected_file_path = st.selectbox(
-                "Select a Result File:",
-                jsonl_files,
-                format_func=lambda x: f"{x.name} ({datetime.fromtimestamp(x.stat().st_mtime).strftime('%Y-%m-%d %H:%M')})"
-            )
             
-            if selected_file_path:
-                try:
-                    # Pass input file to link original topics
-                    results = parse_jsonl_results(str(selected_file_path), str(batch_submit.INPUT_FILE))
-                    
-                    st.success(f"Loaded {len(results)} mnemonics from file.")
-                    
-                    # --- BATCH IMAGE GENERATION BUTTON ---
-                    batch_img_dir = BATCH_RUNS_DIR / selected_file_path.stem
-                    batch_img_dir.mkdir(parents=True, exist_ok=True)
-                    
-                    if st.button("🎨 Generate All Missing Images for this Batch"):
-                        progress_bar = st.progress(0)
-                        status_text = st.empty()
-                        
-                        for i, res in enumerate(results):
-                            c_id = res.get("custom_id", f"item_{i}")
-                            img_file = batch_img_dir / f"{c_id}.png"
-                            
-                            if not img_file.exists():
-                                status_text.text(f"Generating image for: {res.get('topic', c_id)}...")
-                                v_prompt = res.get("visual_prompt")
-                                if v_prompt:
-                                    try:
-                                        gen_theme = theme if theme else "Professional Educator"
-                                        img_bytes = pipeline.step3_generate_image(v_prompt, gen_theme)
-                                        if img_bytes:
-                                            with open(img_file, "wb") as f:
-                                                f.write(img_bytes)
-                                    except Exception as e:
-                                        st.warning(f"Failed to generate for {c_id}: {e}")
-                            
-                            progress_bar.progress((i + 1) / len(results))
-                        
-                        status_text.text("✅ Batch image generation complete!")
-                        st.rerun()
-
-                    if results:
-                        # Master-Detail Layout
-                        md_col1, md_col2 = st.columns([1, 2])
-                        
-                        with md_col1:
-                            st.subheader("Topics")
-                            # Use session state to track selection
-                            if 'batch_view_idx' not in st.session_state:
-                                st.session_state['batch_view_idx'] = 0
-                                
-                            for i, res in enumerate(results):
-                                # Prefer input topic for the list view if available
-                                topic = res.get("input_title", res.get("topic", "Unknown Topic"))
-                                # Simple button list
-                                if st.button(f"{topic}", key=f"btn_batch_{i}", use_container_width=True):
-                                    st.session_state['batch_view_idx'] = i
-                                    
-                        with md_col2:
-                            idx = st.session_state.get('batch_view_idx', 0)
-                            if 0 <= idx < len(results):
-                                item = results[idx]
-                                # --- 1. EDITABLE TOPIC ---
-                                # Default to input_topic if available, else generated topic
-                                default_topic = item.get("input_title", item.get("topic", "Unknown Topic"))
-                                new_topic = st.text_input("Result Topic (Editable)", value=default_topic, key=f"topic_edit_{idx}")
-                                
-                                # Update item topic temporarily in memory so save works with new name
-                                item["topic"] = new_topic
-
-                                # --- 2. SAVE BUTTON ---
-                                col_act1, col_act2 = st.columns([1, 1])
-                                with col_act1:
-                                    if st.button("💾 Save to File", key=f"save_batch_{idx}"):
-                                        try:
-                                            # Construct objects for saving
-                                            # MnemonicData
-                                            m_data = MnemonicResponse(
-                                                topic=item["topic"],
-                                                story=item.get("story", ""),
-                                                associations=[
-                                                    Association(
-                                                        character=a.get("character", ""), 
-                                                        medicalTerm=a.get("medical_term", ""),
-                                                        explanation=a.get("explanation")
-                                                    ) for a in item.get("associations", [])
-                                                ],
-                                                visualPrompt=item.get("visual_prompt", "")
-                                            )
-                                            # QuizData
-                                            quiz_items = []
-                                            if "quiz" in item and isinstance(item["quiz"], list):
-                                                for q in item["quiz"]:
-                                                    try:
-                                                        # Try to find correct option index
-                                                        opt_idx = 0
-                                                        if "answer" in q:
-                                                            try:
-                                                                opt_idx = q["options"].index(q["answer"])
-                                                            except (ValueError, KeyError):
-                                                                pass
-                                                        
-                                                        quiz_items.append(QuizItem(
-                                                            question=q.get("question", ""),
-                                                            options=q.get("options", []),
-                                                            correctOptionIndex=opt_idx,
-                                                            explanation=q.get("explanation", "Correct!")
-                                                        ))
-                                                    except Exception:
-                                                        continue
-                                            
-                                            q_data = QuizList(quizzes=quiz_items)
-                                            
-                                            # Bbox (Empty for batch usually)
-                                            b_data = BboxAnalysisResponse(boxes=[])
-
-                                            # Image (Check session state)
-                                            img_bytes = st.session_state.get(f'batch_img_{idx}')
-                                            if not img_bytes:
-                                                # Create a simple placeholder image so saving doesn't fail
-                                                img = Image.new('RGB', (100, 100), color = (73, 109, 137))
-                                                buf = io.BytesIO()
-                                                img.save(buf, format='PNG')
-                                                img_bytes = buf.getvalue()
-
-                                            path = save_generation(m_data, b_data, q_data, img_bytes, specialty="Batch_Import")
-                                            st.success(f"Saved to: {path}")
-                                            
-                                        except Exception as e:
-                                            st.error(f"Save failed: {e}")
-                                
-                                # Story
-                                st.markdown(f'<div class="card">{item.get("story", "No story found.")}</div>', unsafe_allow_html=True)
-                                
-                                # Visual Prompt
-                                if "visual_prompt" in item:
-                                    with st.expander("Visual Prompt"):
-                                        st.write(item["visual_prompt"])
-                                    
-                                    # Generate Image Button
-                                    if st.button("🎨 Generate Image for this result", key=f"gen_img_{idx}"):
-                                        with st.spinner("Generating image..."):
-                                            try:
-                                                # Use the pipeline's image generation step
-                                                # Need to use the theme from sidebar or default
-                                                gen_theme = theme if theme else "Professional Educator"
-                                                img_bytes = pipeline.step3_generate_image(item["visual_prompt"], gen_theme)
-                                                
-                                                if img_bytes:
-                                                    st.session_state[f'batch_img_{idx}'] = img_bytes
-                                                    st.success("Image generated!")
-                                                else:
-                                                    st.error("Failed to generate image.")
-                                            except Exception as e:
-                                                st.error(f"Error: {e}")
-                                    
-                                    # Show generated image if exists on disk or in session state
-                                    c_id = item.get("custom_id", f"item_{idx}")
-                                    img_file = batch_img_dir / f"{c_id}.png"
-                                    
-                                    if img_file.exists():
-                                        with open(img_file, "rb") as f:
-                                            st.image(f.read(), width='stretch')
-                                    elif f'batch_img_{idx}' in st.session_state:
-                                        st.image(st.session_state[f'batch_img_{idx}'], width='stretch')
-
-                                
-                                # Associations
-                                if "associations" in item and item["associations"]:
-                                    st.subheader("Associations")
-                                    for assoc in item["associations"]:
-                                        char = assoc.get("character", "Unknown")
-                                        term = assoc.get("medical_term", "Unknown")
-                                        st.markdown(f"**{char}** ➔ {term}")
-                                        
-                                # Quiz
-                                if "quiz" in item and item["quiz"]:
-                                    st.subheader("Quiz")
-                                    for i, q in enumerate(item["quiz"]):
-                                        with st.expander(f"Q{i+1}: {q.get('question', 'No question')}"):
-                                            st.write(f"**Options:** {', '.join(q.get('options', []))}")
-                                            st.write(f"**Answer:** {q.get('answer', 'Unknown')}")
-                                            
-                                # Raw Data
-                                with st.expander("Raw Data"):
-                                    st.json(item)
-                    
-                except Exception as e:
-                    st.error(f"Error parsing file: {e}")
+            if st.button("☁️ Retrieve & Save to Cloud"):
+                with st.spinner("Retrieving results and saving to Storage..."):
+                    try:
+                        count = batch_retrieve.retrieve_and_finalize(status.get('job_name'), storage_backend=storage_backend)
+                        if count > 0:
+                            st.balloons()
+                            st.success(f"✅ Successfully saved {count} mnemonics to Cloud Storage!")
+                            st.info("Check the 'History' sidebar to see your new mnemonics.")
+                        else:
+                            st.warning("No items were processed. Check logs or job status.")
+                    except Exception as e:
+                        st.error(f"Error during retrieval: {e}")
