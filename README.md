@@ -1,337 +1,172 @@
 # MedMonics 🧠
 
-**AI-Powered Medical Mnemonics Generator**
+**AI-Powered Medical Mnemonics Generator & Educational Platform**
 
-MedMonics uses Google's Gemini AI to create memorable, visual mnemonics for medical education. Transform complex medical concepts into engaging stories with illustrated characters, making study material easier to remember and more fun to learn.
 
-## Features
+> [!IMPORTANT]
+> **Disclaimer: This tool is NOT for medical advice.**
+> MedMonics is designed to help medical professionals and students **retain information they have already learned** from primary sources. It is not a substitute for professional medical training, textbooks, or clinical guidelines. **We strongly encourage you to upload your own verified source materials** (textbooks, notes, guidelines) to generate accurate mnemonics tailored to your curriculum.
 
-- **5-Step AI Pipeline**: Automatic generation of mnemonics, visual prompts, images, bounding boxes, and quizzes
-- **Multi-Language Support**: Generate content in English or Spanish
-- **Batch Processing**: Generate multiple mnemonics efficiently using Gemini's Batch API
-- **Interactive Quizzes**: Test your knowledge with AI-generated quiz questions
-- **Visual Challenges**: Identify highlighted characters in grayscale images
-- **Streamlit UI**: User-friendly web interface for all features
+MedMonics uses Google's Gemini AI to revolutionize how medical students learn and retain complex information. By transforming dry medical facts into engaging, character-driven stories with custom illustrations and interactive quizzes, MedMonics leverages the power of active recall and dual coding theory to make studying efficient and memorable.
 
-## Architecture
+---
 
-### Core Generation Pipeline (5 Steps)
+## 🎯 The Problem MedMonics Solves
 
-1. **Generate Mnemonic** (`step1_generate_mnemonic`)
-   - Creates story, associations, and initial visual prompt
-   - Uses character-based puns for memory associations
-   - Output: `MnemonicResponse` with topic, facts, story, associations, visualPrompt
+Medical education requires the memorization of vast amounts of information—drug classes, disease criteria, physiological mechanisms, and anatomical structures. Traditional rote memorization is often tedious, fragile, and prone to forgetting.
 
-2. **Enhance Visual Prompt** (`step2_enhance_visual_prompt`) 
-   - Refines the visual description for better image generation
-   - Adds artistic style and composition details
-   - Output: Enhanced prompt string
+**MedMonics bridges the gap between raw data and long-term retention by:**
+*   **Converting Abstract to Concrete:** Turning complex concepts (e.g., "high output heart failure") into vivid visual analogies (e.g., a "motor-heart spinning out of control").
+*   **Creating Narrative Hooks:** Weaving isolated facts into a cohesive story, making them easier to recall in sequence.
+*   **Visual Reinforcement:** Generating custom illustrations where specific visual elements directly map to medical facts.
+*   **Active Testing:** Immediately reinforcing the new mnemonic with AI-generated quizzes that link back to the story characters.
 
-3. **Generate Image** (`step3_generate_image`)
-   - Creates illustration using Gemini's image generation
-   - Falls back to simpler themes if generation fails
-   - Output: Image bytes (PNG)
+### 🔋 Boost Your Study Energy
+Let's face it: medical school is exhausting. After a long day of rotations or lectures, your brain is often too fried for dry textbooks.
+**MedMonics injects fun back into studying.** By turning study material into weird, funny, and colorful stories, we leverage emotion to make memories stick—even when your energy is low. Plus, unlike generic stock photos, our **customized** mnemonics are tailored specifically to the facts you need to know, making them far more memorable and personal.
 
-4. **Analyze Bounding Boxes** (`step4_analyze_bboxes`)
-   - Identifies character locations in the generated image
-   - Uses Gemini 1.5 Flash to detect 2D bounding boxes
-   - Output: `BboxAnalysisResponse` with character positions
+---
 
-5. **Generate Quiz** (`step5_generate_quiz`)
-   - Creates multiple-choice questions based on the mnemonic
-   - Links each question to a specific character
-   - Output: `QuizList` with questions, options, and explanations
+## ✨ Key Features
 
-### Batch Processing Workflow
+### 1. 5-Step AI Generation Pipeline
+Our sophisticated pipeline ensures high-quality, consistent educational content:
+1.  **Mnemonic Engineering:** Analyzes medical facts to create a coherent story with sound-alike characters (e.g., "Sori the Robot" for "Psoriasis").
+2.  **Visual Prompt Enhancement:** Refines the story into a detailed artistic description optimized for image generation.
+3.  **AI Illustration:** Generates a custom image (Cartoon, Photorealistic, etc.) using Gemini's image generation capabilities.
+4.  **Bbox Analysis:** Uses Gemini 1.5 Flash to visually locate and "box" the characters in the generated image for interactive highlighting.
+5.  **Quiz Generation:** Creates multiple-choice questions that test the medical concept while referencing the story character.
 
-1. **Batch Prep** (via Streamlit UI)
-   - Input topic or upload content
-   - AI breaks down into subtopics
-   - Creates `batch_input.json` with breakdown items
-   - Generates `batch_staging.json` with complete mnemonic data (steps 1-2, 5)
+### 2. Interactive Study Interface
+*   **Dynamic Highlighting:** Click on a medical fact, and the corresponding character in the image lights up while the rest fades to grayscale.
+*   **"Dive Deeper" Recursive Learning:** Click on any term to instantly generate a *new* nested mnemonic for that specific concept, creating a web of knowledge.
+*   **Integrated Quizzes:** Test your recall immediately after learning the story.
 
-2. **Batch Submit** (`scripts/batch_submit.py`)
-   - Reads `batch_staging.json`
-   - Submits image generation requests (step 3) to Gemini Batch API
-   - Saves job ID to `latest_batch_job.txt`
+### 3. Global Visual Challenge
+A gamified review mode that continually tests your knowledge across all your saved mnemonics.
+*   **Randomized Questions:** Draws from your entire library of generated content.
+*   **Visual Hints:** Displays the image with only the relevant character highlighted to trigger visual memory.
 
-3. **Batch Retrieve** (`scripts/batch_retrieve.py`)
-   - Checks job status
-   - Downloads completed images from inline responses
-   - Runs bbox analysis (step 4) on each image
-   - Saves final results to `generations/` directory
+### 4. Batch Processing Power
+Perfect for creating study decks for entire subjects (e.g., "Pharmacology of Antibiotics").
+*   **Topic Breakdown:** Input a broad topic (e.g., "Heart Failure"), and the AI breaks it down into subtopics.
+*   **Bulk Generation:** Uses Gemini's Batch API to generate dozens of mnemonics and images in the background.
+*   **Review & Edit:** Manage and refine your batch results in a dedicated dashboard.
 
-## Installation
+---
+
+## 📚 Example Output: Psoriasis Eritrodérmica
+
+Here is an actual example of a mnemonic generated by MedMonics:
+
+![Psoriasis Eritrodérmica Mnemonic](generations/20260127_223712_psoriasis_eritrodérmica/image.png)
+
+### The Story: "Sori the Robot"
+> "In the new movie using 'Sori the Red Robot', our protagonist Sori suffers a short circuit when his evil boss rips out his 'Corti-Cube' battery (Corticosteroid withdrawal). Instantly, 90% of Sori's circuits turn a glowing neon red (Erythroderma >90% body surface). Although he looks like he's burning up, Sori starts shivering with cold because he's lost his thermal insulation (Hypothermia). His heart-motor starts spinning at a crazy speed (High-output heart failure) trying to compensate for the disaster."
+
+### Visual Associations
+| Character | Medical Concept | Explanation |
+| :--- | :--- | :--- |
+| **Sori the Red Robot** | *Psoriasis Eritrodérmica* | The main character represents the disease, highlighting the varying red skin color. |
+| **90% Circuits Glowing** | *>90% Body Surface Area* | Defines the clinical criteria for erythroderma. |
+| **Removed "Corti-Cube"** | *Corticosteroid Withdrawal* | A common trigger for this severe form of psoriasis. |
+| **Shivering Robot** | *Hypothermia* | Loss of skin barrier leads to inability to regulate temperature. |
+| **Spinning Heart-Motor** | *High-Output Heart Failure* | Massive vasodilation requires the heart to work harder. |
+
+### Quiz Question
+**Q:** In the analogy of Sori, the "90% circuits glowing" defines a fundamental diagnostic criterion. What does this value refer to in clinical practice?
+*   **A) The threshold of total body surface area affected to define erythroderma** ✅
+*   B) The percentage of mortality risk without treatment
+*   C) The probability of recurrence
+*   *Explanation: Erythrodermic psoriasis is technically defined when erythema and scaling affect more than 90% of the patient's total body surface area.*
+
+---
+
+## 🛠️ Installation
 
 ### Prerequisites
-- Python 3.13+
-- Google Gemini API key
+*   Python 3.10+
+*   Google Gemini API Key
 
 ### Setup
 
-```bash
-# Clone the repository
-git clone <repository-url>
-cd medmonics
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/sotoblanco/medmonics.git
+    cd medmonics
+    ```
 
-# Install dependencies using uv
-uv sync
+2.  **Install dependencies:**
+    We recommend using `uv` for fast dependency management, but `pip` works too.
+    ```bash
+    # Using uv (Recommended)
+    uv sync
 
-# Or using pip
-pip install -r requirements.txt
+    # Using pip
+    pip install -r requirements.txt
+    ```
 
-# Create .env file with your API key
-echo "GEMINI_API_KEY=your_api_key_here" > .env
-```
+3.  **Configure API Key:**
+    Create a `.env` file in the root directory:
+    ```bash
+    echo "GEMINI_API_KEY=your_actual_api_key_here" > .env
+    ```
 
-### Dependencies
+## 🚀 Usage
 
-- `google-genai` - Gemini API client
-- `streamlit` - Web UI framework
-- `pillow` - Image processing
-- `pandas` - Data manipulation
-- `python-dotenv` - Environment variable management
-- `jupyter` - Optional, for notebooks
-
-## Usage
-
-### Running the Web App
-
+### 1. Run the Web App
+Launch the Streamlit interface:
 ```bash
 streamlit run app.py
 ```
+Navigate to `http://localhost:8501` in your browser.
 
-The app has 4 tabs:
+### 2. Command Line Utilities
+For advanced users or automated workflows:
 
-1. **✨ Generator**: Create individual mnemonics
-   - Enter a medical topic or facts
-   - Select language, theme, and visual style
-   - View generated story, image, and quiz
-   - Save to local storage
+*   **Submit a Batch Job:**
+    ```bash
+    python scripts/batch_submit.py
+    ```
+    *Reads from `data/batch_staging.json`*
 
-2. **🧠 Global Challenge**: Practice with visual quizzes
-   - Random quiz questions from all saved mnemonics
-   - Character highlighting in images
-   - Immediate feedback
+*   **Retrieve Batch Results:**
+    ```bash
+    python scripts/batch_retrieve.py
+    ```
+    *Downloads images and results to `generations/`*
 
-3. **🚀 Batch Prep**: Prepare batch generation jobs
-   - Input topic or upload content  
-   - AI breaks down into subtopics
-   - Review and edit breakdown
-   - Submit batch job
+---
 
-4. **📂 Batch Results**: View and manage batch outputs
-   - See all batch-generated mnemonics
-   - Edit topic names
-   - Save to permanent storage
+## 📂 Project Structure
 
-### Command-Line Scripts
-
-#### Submit a Batch Job
-
-```bash
-python scripts/batch_submit.py
-```
-
-Reads `data/batch_staging.json` and submits to Gemini Batch API.
-
-#### Check Job Status
-
-```bash
-python scripts/batch_retrieve.py --status-only
-```
-
-#### Retrieve Completed Results
-
-```bash
-python scripts/batch_retrieve.py
-```
-
-Downloads images, runs bbox analysis, and saves to `generations/`.
-
-#### Use Specific Job ID
-
-```bash
-python scripts/batch_retrieve.py --job-name "projects/12345/locations/us-central1/batchPredictionJobs/67890"
-```
-
-## File Structure
-
-```
+```text
 medmonics/
-├── .env                      # API configuration (create this)
-├── .gitignore               # Git ignore rules
-├── pyproject.toml           # Project dependencies
-├── README.md               # This file
-├── app.py                   # Main Streamlit application (911 lines)
-│
-├── medmonics/              # Core package
-│   ├── __init__.py         # Package exports
-│   ├── pipeline.py         # MedMnemonicPipeline class (260 lines)
-│   ├── prompts.py          # Prompt templates and model constants (207 lines)
-│   ├── data_loader.py      # Batch result parsing utilities (211 lines)
-│   └── schemas.py          # Pydantic data models (12 lines)
-│
-├── scripts/                # Batch processing scripts
-│   ├── __init__.py
-│   ├── batch_submit.py     # Submit batch jobs (106 lines)
-│   └── batch_retrieve.py   # Retrieve batch results (250 lines)
-│
-├── data/                   # Batch data files
-│   ├── batch_input.json    # Original subtopic breakdown
-│   ├── batch_staging.json  # Complete mnemonic data for batch
-│   ├── batch_requests.jsonl # (historical, may not be used)
-│   └── latest_batch_job.txt # Most recent batch job ID
-│
-└── generations/            # Saved mnemonics
-    └── [specialty]/        # e.g., "cardiology", "neurology"
-        └── [timestamp_topic]/
-            ├── data.json   # Complete mnemonic data
-            └── image.png   # Generated illustration
+├── app.py                   # Main Streamlit Application
+├── medmonics/               # Core Logic Package
+│   ├── pipeline.py          # 5-Step Generation Workflow
+│   ├── prompts.py           # Gemini Prompt Templates
+│   ├── data_loader.py       # JSON/Batch Processing Utilities
+│   └── schemas.py           # Pydantic Data Models
+├── scripts/                 # Automation Scripts
+│   ├── batch_submit.py      # Batch API Submission
+│   └── batch_retrieve.py    # Result Handling & Image Download
+├── data/                    # Data Storage
+└── generations/             # Output Directory for Saved Mnemonics
 ```
 
-## Core Modules
+---
 
-### `medmonics/pipeline.py`
-Main generation pipeline with `MedMnemonicPipeline` class containing all 5 generation steps plus batch breakdown methods.
+## 🤝 Contributing
 
-**Key Classes:**
-- `MedMnemonicPipeline` - Main orchestrator
-- `MnemonicResponse` - Mnemonic data model
-- `BboxAnalysisResponse` - Bounding box data
-- `QuizList` - Quiz questions
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### `medmonics/prompts.py`
-All prompt templates and model configuration.
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
 
-**Key Constants:**
-- `MODEL_FLASH` - Fast model for text generation
-- `MODEL_IMAGE_GEN` - Image generation model
-- `MODEL_VISUAL_PROMPT` - Visual prompt enhancement
+## 📄 License
 
-**Key Functions:**
-- `get_mnemonic_prompt()` - Main mnemonic generation prompt
-- `get_image_generation_prompt()` - Image generation prompt
-- `get_bbox_analysis_prompt()` - Bbox detection prompt
-- `get_quiz_prompt()` - Quiz generation prompt
-- `get_topic_breakdown_prompt()` - Batch breakdown prompt
-
-### `medmonics/data_loader.py`
-Utilities for loading and normalizing batch API results.
-
-**Key Functions:**
-- `normalize_keys()` - Normalizes inconsistent JSON key formats
-- `parse_jsonl_results()` - Parses batch output JSONL files
-
-### `medmonics/schemas.py`
-Pydantic models for type safety and validation.
-
-## Development
-
-### Adding New Prompt Templates
-
-1. Add the template function to `medmonics/prompts.py`
-2. Use the appropriate model constant
-3. Include language instructions via `get_language_instruction()`
-
-### Extending the Pipeline
-
-To add a new generation step:
-
-1. Add method to `MedMnemonicPipeline` class in `pipeline.py`
-2. Update `run_generation_pipeline()` in `app.py`
-3. Update data models in `schemas.py` if needed
-
-### Modifying Visual Styles
-
-Edit `get_visual_style_instruction()` in `prompts.py`:
-
-```python
-def get_visual_style_instruction(style: str):
-    styles = {
-        "cartoon": "Vibrant cartoon style...",
-        "realistic": "Photorealistic style...",
-        "your_style": "Your custom instructions..."
-    }
-    return styles.get(style, styles["cartoon"])
-```
-
-### Supported Languages
-
-Currently: English (`en`) and Spanish (`es`)
-
-To add a language, update `LANGUAGE_INSTRUCTION_*` constants and `get_language_instruction()` in `prompts.py`.
-
-## Medical Specialties
-
-The app supports saving to these specialty categories:
-
-- General Medicine
-- Cardiology
-- Neurology
-- Pediatrics
-- Psychiatry
-- Dermatology
-- Gastroenterology
-- Pulmonology
-- Endocrinology
-- Nephrology
-- Immunology
-- Infectious Diseases
-- Obstetrics & Gynecology
-- Surgery
-- Orthopedics
-- Urology
-- Oncology
-- Emergency Medicine
-- Pharmacology
-- Pathology
-- Radiology
-- Anatomy
-- Physiology
-- Microbiology
-- Biochemistry
-
-## Troubleshooting
-
-### Batch Job Submission Fails
-
-**Error:** `400 INVALID_ARGUMENT`
-- Check that `batch_staging.json` exists and is valid JSON
-- Verify API key in `.env` file
-- Ensure `response_modalities` includes `'IMAGE'` for image generation
-
-### No Images in Batch Results
-
-**Symptom:** Batch completes but no images retrieved
-- Verify job was submitted with inline requests (check `batch_submit.py`)
-- Use `--status-only` flag to check job state
-- Check that `response_modalities: ['TEXT', 'IMAGE']` was set
-
-### Import Errors
-
-```
-ModuleNotFoundError: No module named 'medmonics'
-```
-
-Make sure you're running from the project root and the package is installed:
-```bash
-cd /path/to/medmonics
-pip install -e .
-```
-
-### Pydantic Validation Errors
-
-If you see validation errors when loading batch results, the JSON structure may have changed. Check `data_loader.py` and update `normalize_keys()` to handle the new format.
-
-## License
-
-[Your License Here]
-
-## Contributing
-
-[Your Contribution Guidelines Here]
-
-## Contact
-
-[Your Contact Information Here]
+Distributed under the MIT License. See `LICENSE` for more information.
