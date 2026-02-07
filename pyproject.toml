@@ -1,0 +1,18 @@
+[project]
+name = "medmonics"
+version = "0.1.0"
+description = "AI-Powered Medical Mnemonics Generator using Google Gemini - Transform complex medical concepts into memorable visual stories"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    { name = "MedMonics Team" }
+]
+keywords = ["medical", "education", "mnemonics", "ai", "gemini", "flashcards"]
+dependencies = [
+    "google-genai>=1.60.0",
+    "jupyter>=1.1.1",
+    "pandas>=2.3.3",
+    "pillow>=12.1.0",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.53.1",
+]

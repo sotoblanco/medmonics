@@ -1,0 +1,1689 @@
+[
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 1: Core Goals and Essential Components of Asthma Management",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Chronic Asthma Care Objectives and Pillars",
+            "facts": [
+                "Core Goals: Optimize symptom control, reduce exacerbation risk, and preserve lung function.",
+                "Side Effect Goal: Minimize medication adverse effects.",
+                "Activity Expectation: Participation in normal daily activities (sleep, work, school, play) without limitation.",
+                "Four Pillars: Patient education, minimizing trigger exposure, monitoring symptoms/lung function, and pharmacologic therapy.",
+                "Guideline Basis: Based on NAEPP and GINA recommendations."
+            ],
+            "story": "Welcome to Professor Astra’s 'Breath-Easy Academy'! Professor Astra (Chronic Asthma) is teaching her class how to keep the 'Symptom Soup' from boiling over (Symptom Control) while keeping 'Lung Balloons' safely in 'Preserve Jars' (Preserve Lung Function). She uses a giant shield to stop the 'Exasperated Fire-Breathing Dragon' (Exacerbation Risk) and warns everyone to avoid the 'Side-Saddle Slide' (Side Effects). In her classroom, students are busy playing soccer and sleeping soundly (Normal Activities). To graduate, they must meet the Four Pillars: Ed the Bookworm (Education), a 'No-Trigger' Sign over a dusty cat (Minimizing Triggers), Moni the Monitor Lizard with a peak-flow meter (Monitoring), and Farmer-Pill who grows medicine crops (Pharmacology). Everything they do is checked against the 'Gina Giraffe’s Rulebook' (GINA Guidelines)!",
+            "associations": [
+                {
+                    "character": "Professor Astra",
+                    "medicalTerm": "Chronic Asthma Care",
+                    "explanation": "The lead educator representing the management of chronic asthma."
+                },
+                {
+                    "character": "Symptom Soup Lid",
+                    "medicalTerm": "Symptom Control",
+                    "explanation": "Keeping the lid on the soup represents maintaining control over daily asthma symptoms."
+                },
+                {
+                    "character": "Lung Balloons in Preserve Jars",
+                    "medicalTerm": "Preserve Lung Function",
+                    "explanation": "Storing balloons in jars represents the goal of protecting and maintaining long-term lung capacity."
+                },
+                {
+                    "character": "Exasperated Dragon",
+                    "medicalTerm": "Exacerbation Risk",
+                    "explanation": "The fiery dragon represents the risk of sudden asthma attacks or exacerbations that need to be reduced."
+                },
+                {
+                    "character": "Side-Saddle Slide",
+                    "medicalTerm": "Medication Side Effects",
+                    "explanation": "A slippery slide on the side represents the goal of minimizing adverse effects from treatments."
+                },
+                {
+                    "character": "Students Playing and Sleeping",
+                    "medicalTerm": "Normal Daily Activities",
+                    "explanation": "Represents the expectation that patients should live without limitations in school, work, or play."
+                },
+                {
+                    "character": "Ed the Bookworm",
+                    "medicalTerm": "Patient Education and Engagement",
+                    "explanation": "The first pillar of care focusing on teaching the patient how to manage their condition."
+                },
+                {
+                    "character": "No-Trigger Sign/Dusty Cat",
+                    "medicalTerm": "Minimizing Exposure to Triggers",
+                    "explanation": "The second pillar involving the identification and avoidance of environmental asthma triggers."
+                },
+                {
+                    "character": "Moni the Monitor Lizard",
+                    "medicalTerm": "Monitoring Symptoms and Lung Function",
+                    "explanation": "The third pillar which requires regular tracking of symptoms and airflow measurements."
+                },
+                {
+                    "character": "Farmer-Pill",
+                    "medicalTerm": "Pharmacologic Therapy",
+                    "explanation": "The fourth pillar representing the use of inhalers and medications to treat asthma."
+                },
+                {
+                    "character": "Gina Giraffe's Rulebook",
+                    "medicalTerm": "GINA / NAEPP Guidelines",
+                    "explanation": "Represents the official medical guidelines (Global Initiative for Asthma) that dictate the standards of care."
+                }
+            ],
+            "visualPrompt": "A hyper-vibrant 3D Chibi Pixar-style scene featuring Professor Astra, a cheerful educator with star-themed glasses, in a cinematic classroom. In the center, a 'Monitor Lizard' holds a clipboard and a peak-flow meter. To the left, 'Farmer-Pill' is a small character with a sun hat tending to a garden of colorful inhalers. In the background, a 'Gina Giraffe' holds a large book labeled 'GUIDELINES'. A 'Lung Balloon' is safely tucked inside a glass jar on a shelf. The lighting is bright and magical, with exaggerated facial expressions and rich, saturated colors, showing a 'No-Triggers' sign crossing out a dust cloud."
+        },
+        "visual_prompt": "**Visual Prompt:**\n\nA high-definition, Pixar-style 3D animation illustration set in the \"Breath-Easy Academy,\" featuring **Professor Astra** as a sophisticated **Professional Educator**. Professor Astra is an anthropomorphic, personified representation of Chronic Asthma Care, depicted as a graceful, scholarly figure wearing a tweed blazer with elbow patches and stylish spectacles. She stands confidently at the front of a whimsical, sunlight-filled classroom.\n\nIn the center of the room, Professor Astra holds a polished wooden ladle over a large, bubbling **\"Symptom Soup\"** pot, pressing a heavy, gleaming lid down to represent **Symptom Control**. Beside her, a shelf displays delicate **\"Lung Balloons\"** glowing with vibrant colors, safely sealed inside glass **\"Preserve Jars\"** to symbolize the **Preservation of Lung Function**.\n\nTo the left, Professor Astra holds up a magnificent, crystalline shield, blocking the path of the **\"Exasperated Fire-Breathing Dragon\"**—a small, huffing creature representing **Exacerbation Risk**. On the right, a playful **\"Side-Saddle Slide\"** (representing **Medication Side Effects**) is cordoned off with velvet ropes to show it is being avoided. In the background, happy students are visible through a large window, some playing soccer and others napping soundly in cozy nooks, representing **Normal Daily Activities**.\n\nThe **Four Pillars of Care** are arranged as distinct learning stations managed by Professor Astra:\n1.  **Ed the Bookworm**: A large, friendly green worm wearing a graduation cap, surrounded by stacks of books on **Patient Education**.\n2.  **The \"No-Trigger\" Sign**: A clear \"No\" symbol hovering over a sneezing, dusty cartoon cat, illustrating **Trigger Minimization**.\n3.  **Moni the Monitor Lizard**: A sleek lizard in a lab coat holding a giant, colorful peak-flow meter, representing **Monitoring**.\n4.  **Farmer-Pill**: A cheerful character in overalls tending to a garden where inhalers and medicine capsules grow like vibrant flowers, representing **Pharmacologic Therapy**.\n\nThe entire scene is overseen by a tall, elegant **Gina Giraffe**, who wears a teacher’s lanyard and holds a massive, glowing book titled **\"GINA Rulebook\"** (representing the **GINA Guidelines**). The art style is bright, clean, and educational, with soft cinematic lighting, rich textures, and a professional yet whimsical academic atmosphere.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Professor Astra",
+                    "question": "When establishing chronic asthma care objectives, what are the primary goals according to evidence-based frameworks like NAEPP?",
+                    "options": [
+                        "Eradicating the underlying genetic predisposition to airway hyperresponsiveness",
+                        "Maximizing peak expiratory flow regardless of medication side effects",
+                        "Optimizing symptom control, reducing exacerbation risk, and preserving lung function",
+                        "Restricting physical activity to prevent exercise-induced bronchoconstriction"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Professor Astra represents the core objectives of chronic asthma care, which focus on symptom control and risk reduction for long-term lung health."
+                },
+                {
+                    "character": "Symptom Soup Lid",
+                    "question": "In the context of asthma management, why is 'keeping the lid' on symptoms considered a primary pillar of long-term therapy?",
+                    "options": [
+                        "To allow for the cessation of inhaled corticosteroids once control is achieved",
+                        "To prevent permanent airway remodeling and future loss of lung function",
+                        "To shift the diagnosis from asthma to chronic obstructive pulmonary disease",
+                        "To ensure the patient can tolerate high doses of systemic steroids"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Symptom control is vital because persistent inflammation and frequent symptoms are linked to airway remodeling and irreversible declines in lung function."
+                },
+                {
+                    "character": "Lung Balloons in Preserve Jars",
+                    "question": "Which clinical metric is most objective for a clinician to monitor the 'preservation' of lung function in an adolescent with chronic asthma?",
+                    "options": [
+                        "Frequency of albuterol use",
+                        "Number of school days missed per year",
+                        "Serial measurements of FEV1/FVC ratios",
+                        "Presence of nocturnal awakenings"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "While symptoms are subjective, preserving lung function is objectively measured via spirometry, specifically FEV1 and the FEV1/FVC ratio."
+                },
+                {
+                    "character": "Exasperated Dragon",
+                    "question": "What is the most significant clinical risk associated with frequent asthma exacerbations?",
+                    "options": [
+                        "Increased risk of future life-threatening events and lung function decline",
+                        "Development of secondary bacterial pneumonia",
+                        "Immediate transition to Type 1 Diabetes",
+                        "Permanent resolution of the allergic component of asthma"
+                    ],
+                    "correctOptionIndex": 0,
+                    "explanation": "The 'Exasperated Dragon' signifies exacerbation risk; frequent flares increase the risk of mortality and accelerate the decline of pulmonary capacity."
+                },
+                {
+                    "character": "Side-Saddle Slide",
+                    "question": "To minimize the risk represented by the 'Side-Saddle Slide', which strategy is recommended for patients requiring high-dose inhaled corticosteroids (ICS)?",
+                    "options": [
+                        "Switching to oral prednisone for long-term maintenance",
+                        "Using a spacer and rinsing the mouth after administration",
+                        "Discontinuing all controllers during the summer months",
+                        "Replacing ICS with long-acting beta-agonists (LABA) monotherapy"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Minimizing medication side effects (the Side-Saddle Slide) involves local strategies like using spacers and rinsing to prevent oral candidiasis and systemic absorption."
+                },
+                {
+                    "character": "Students Playing and Sleeping",
+                    "question": "Which of the following scenarios indicates that a patient's asthma is NOT well-controlled based on the 'Normal Daily Activities' benchmark?",
+                    "options": [
+                        "The patient can play a full soccer match without using a rescue inhaler",
+                        "The patient experiences nocturnal awakenings due to cough twice a week",
+                        "The patient attends school every day and participates in gym class",
+                        "The patient reports no limitations in their ability to perform household chores"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Normal activities include undisturbed sleep; nocturnal awakenings are a key indicator of poor asthma control."
+                },
+                {
+                    "character": "Ed the Bookworm",
+                    "question": "How does the 'Ed the Bookworm' pillar specifically improve clinical outcomes in chronic asthma?",
+                    "options": [
+                        "By teaching patients to self-adjust medications based on a written Action Plan",
+                        "By providing a list of generic versus brand-name medications",
+                        "By encouraging patients to research alternative herbal cures",
+                        "By ensuring the patient knows the history of the pharmaceutical industry"
+                    ],
+                    "correctOptionIndex": 0,
+                    "explanation": "Patient education and engagement (Ed) focus on self-management skills, such as using an Asthma Action Plan to respond to changes in symptoms."
+                },
+                {
+                    "character": "No-Trigger Sign/Dusty Cat",
+                    "question": "What is the primary rationale for the 'No-Trigger Sign' in a comprehensive asthma management plan?",
+                    "options": [
+                        "To replace the need for pharmacologic therapy entirely",
+                        "To identify and reduce environmental exposures that induce airway inflammation",
+                        "To ensure the patient moves to a different geographic climate",
+                        "To eliminate the need for annual influenza vaccinations"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Minimizing trigger exposure (Dusty Cat) reduces the underlying inflammatory burden and the frequency of acute bronchoconstriction."
+                },
+                {
+                    "character": "Moni the Monitor Lizard",
+                    "question": "According to GINA guidelines, what is the 'Moni the Monitor Lizard' pillar essential for identifying in the clinical setting?",
+                    "options": [
+                        "Early signs of treatment failure or progressive loss of lung function",
+                        "The patient's compliance with diet and exercise",
+                        "The specific allergen causing the patient's symptoms",
+                        "The exact cost-benefit ratio of the current insurance plan"
+                    ],
+                    "correctOptionIndex": 0,
+                    "explanation": "Monitoring symptoms and lung function allows clinicians to assess the effectiveness of the current step of therapy and adjust as needed."
+                },
+                {
+                    "character": "Farmer-Pill",
+                    "question": "Under the 'Farmer-Pill' pillar, what is currently the preferred 'controller' therapy for most patients with persistent asthma?",
+                    "options": [
+                        "Short-acting beta-agonists (SABA) as needed",
+                        "Inhaled corticosteroids (ICS)",
+                        "Oral leukotriene receptor antagonists (LTRA) monotherapy",
+                        "Theophylline"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Pharmacologic therapy (Farmer-Pill) prioritizes anti-inflammatory controllers, with Inhaled Corticosteroids (ICS) being the gold standard."
+                },
+                {
+                    "character": "Gina Giraffe's Rulebook",
+                    "question": "What role does 'Gina Giraffe’s Rulebook' play in the global management of asthma?",
+                    "options": [
+                        "It provides a rigid legal framework for medical malpractice",
+                        "It offers evidence-based, periodically updated strategies for diagnosis and management",
+                        "It lists the specific retail prices for asthma medications worldwide",
+                        "It dictates the mandatory physical activity levels for all asthma patients"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "GINA (and NAEPP) provide the 'rulebook' or clinical guidelines that define the standard of care for asthma management globally."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 2: Goals for Optimizing Asthma Symptom Control",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Asthma Control Targets",
+            "facts": [
+                "Absence of cough, chest tightness, wheezing, or shortness of breath",
+                "Rare to no night-time awakenings",
+                "Minimal use of rescue inhalers",
+                "Optimized lung function (FEV1/PEF)",
+                "Normal participation in work, school, and sports",
+                "Patient and caregiver satisfaction"
+            ],
+            "story": "Professor 'Az-Ma' (Asthma) is holding a graduation ceremony for her top student, 'Control-Cat'. First, she hands him a 'Silencer Muzzle' because he never coughs or wheezes anymore. Next, they step into a 'Dream Cloud' where Control-Cat sleeps like a rock without waking up. Professor Az-Ma then hides a 'Rescue-Rocket' (Inhaler) in a dusty trophy case because it's hardly ever used. She measures his lungs with a giant 'Accordion-Bellows' that expands to full size, showing perfect lung function. Control-Cat then does a backflip into a 'School-Bus-Soccer-Ball' mashup to show he misses no activities. Finally, a happy 'Caregiver-Cupcake' gives them both a thumbs-up and a gold star for being satisfied with the treatment!",
+            "associations": [
+                {
+                    "character": "Silencer Muzzle",
+                    "medicalTerm": "Symptom Freedom",
+                    "explanation": "Represents the absence of cough, wheezing, and chest tightness."
+                },
+                {
+                    "character": "Dream Cloud",
+                    "medicalTerm": "Nocturnal Quality",
+                    "explanation": "Represents rare to no night-time awakenings due to asthma."
+                },
+                {
+                    "character": "Dusty Rescue-Rocket",
+                    "medicalTerm": "Minimal Rescue Reliance",
+                    "explanation": "The inhaler is rarely needed for acute relief."
+                },
+                {
+                    "character": "Accordion-Bellows",
+                    "medicalTerm": "Optimized Lung Function",
+                    "explanation": "Represents achieving peak flow or FEV1 targets."
+                },
+                {
+                    "character": "School-Bus-Soccer-Ball",
+                    "medicalTerm": "Life Participation",
+                    "explanation": "Represents maintaining normal work, school, and athletic attendance."
+                },
+                {
+                    "character": "Happy Caregiver-Cupcake",
+                    "medicalTerm": "Patient/Caregiver Satisfaction",
+                    "explanation": "Represents high levels of satisfaction with the asthma care plan."
+                }
+            ],
+            "visualPrompt": "Professional Educator theme: A hyper-vibrant 3D Chibi-style Professor with oversized glasses standing in a high-tech classroom. She is presenting 'Control-Cat', who is wearing a graduation cap. In the background, a giant blue 'Accordion-Bellows' is fully expanded. A 'Rescue-Rocket' sits inside a glass trophy case labeled 'Rarely Used'. A soccer ball with school bus wheels is in the corner. Cinematic lighting, Pixar-style exaggerated joyful expressions, and a neon-colored 'Gold Star' floating above their heads."
+        },
+        "visual_prompt": "thought)**Visual Prompt for Image Generation**\n\n**Theme:** Professional Educator\n**Style:** Polished educational illustration, 3D Pixar-style animation with vibrant colors, soft studio lighting, and a clean, pedagogical atmosphere. The scene is framed as a \"Masterclass Graduation Ceremony\" in a bright, modern classroom setting.\n\n**The Scene:**\nA high-definition, wide-angle shot of a classroom stage where **Professor 'Az-Ma'**, a dignified and friendly anthropomorphic owl wearing a navy-blue academic gown and professional spectacles (The Professional Educator), is presenting a graduation award to **'Control-Cat'**, a sleek, energetic ginger tabby cat wearing a tiny graduation cap.\n\n**Key Visual Elements:**\n1.  **The Silencer Muzzle:** Professor Az-Ma is holding a polished, silver, open-frame \"Silencer Muzzle\" (symbolizing **Symptom Freedom**). It is decorative and lightweight, resting on a velvet pillow, signifying the cat’s silence from coughing or wheezing.\n2.  **The Dream Cloud:** Floating directly above Control-Cat’s head is a glowing, translucent **\"Dream Cloud\"** (symbolizing **Nocturnal Quality**). Inside the cloud, a miniature silhouette of the cat is seen sleeping soundly on a crescent moon, indicating undisturbed rest.\n3.  **The Dusty Rescue-Rocket:** To the side of the stage stands a glass **\"Trophy Case\"** covered in a visible layer of dust. Inside, a bright red **\"Rescue-Rocket\"** (asthma inhaler with fins) sits untouched, representing **Minimal Rescue Reliance**.\n4.  **The Accordion-Bellows:** In the background, a giant, colorful **\"Accordion-Bellows\"** (symbolizing **Optimized Lung Function**) is fully expanded to its maximum width, displayed on a chalkboard as a graph of \"Perfect Airflow.\"\n5.  **The School-Bus-Soccer-Ball:** On the floor, Control-Cat is mid-backflip over a whimsical **\"School-Bus-Soccer-Ball\"**—a hybrid object with bus wheels and a black-and-white pentagon pattern (symbolizing **Life Participation** in school and sports).\n6.  **The Happy Caregiver-Cupcake:** Standing in the front row of the \"audience\" is a large, cheerful **\"Caregiver-Cupcake\"** with frosting hair, wearing a professional ID badge and holding up a gold star and a \"Thumbs Up\" sign (representing **Patient/Caregiver Satisfaction**).\n\n**Technical Details:**\n*   **Atmosphere:** Inspiring, organized, and celebratory.\n*   **Composition:** Rule of thirds, with Professor Az-Ma (The Educator) and Control-Cat as the central focus.\n*   **Lighting:** Bright, classroom-style overhead lighting with a warm spotlight on the graduation stage.\n*   **Colors:** Academic blues, scholarly gold, and vibrant \"healthy\" greens.\n*   **Final Touch:** Ensure the \"Professional Educator\" vibe is maintained through instructional posters on the walls that display simplified lung diagrams and \"A+\" grades.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Silencer Muzzle",
+                    "question": "A patient with asthma achieves the 'Silencer Muzzle' target. Which clinical outcome best reflects the successful management of airway hyperresponsiveness in this scenario?",
+                    "options": [
+                        "A reduction in the frequency of daytime cough and chest tightness",
+                        "An increase in serum IgE levels",
+                        "A decrease in the FEV1/FVC ratio",
+                        "Persistent nocturnal tachypnea"
+                    ],
+                    "correctOptionIndex": 0,
+                    "explanation": "The 'Silencer Muzzle' represents symptom freedom, specifically the absence of cough, wheezing, and chest tightness, which indicates well-controlled airway hyperresponsiveness."
+                },
+                {
+                    "character": "Dream Cloud",
+                    "question": "In the context of asthma control targets, why is the 'Dream Cloud' (Nocturnal Quality) considered a critical marker for assessing disease severity?",
+                    "options": [
+                        "Nocturnal awakenings suggest a higher risk of impending exacerbation and poor airway stability",
+                        "Night-time symptoms are usually indicative of a concurrent sleep apnea diagnosis",
+                        "Dreaming is inhibited by long-acting beta-agonists (LABAs)",
+                        "Nocturnal symptoms only occur in pediatric patients with extrinsic asthma"
+                    ],
+                    "correctOptionIndex": 0,
+                    "explanation": "Rare to no night-time awakenings (Dream Cloud) signify stable disease; frequent awakenings are a red flag for poor asthma control and increased risk of severe attacks."
+                },
+                {
+                    "character": "Dusty Rescue-Rocket",
+                    "question": "If a patient's 'Rescue-Rocket' remains 'Dusty,' indicating minimal use of short-acting beta-agonists (SABA), what is the most likely pharmacological status of the patient?",
+                    "options": [
+                        "The patient is over-reliant on systemic corticosteroids",
+                        "The patient's maintenance therapy effectively controls underlying airway inflammation",
+                        "The patient has developed a high tolerance to bronchodilators",
+                        "The patient is experiencing a 'silent chest' emergency"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Minimal rescue inhaler use (Dusty Rescue-Rocket) implies that the maintenance therapy (e.g., ICS) is effectively managing the inflammation, negating the need for acute bronchodilation."
+                },
+                {
+                    "character": "Accordion-Bellows",
+                    "question": "An 'Accordion-Bellows' target aims for optimized lung function. Which physiological measurement is the primary objective parameter used to validate this goal?",
+                    "options": [
+                        "Resting heart rate",
+                        "Forced Expiratory Volume in 1 second (FEV1)",
+                        "Inspiratory Reserve Volume (IRV)",
+                        "Oxygen saturation via pulse oximetry"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Optimized lung function (Accordion-Bellows) is objectively measured using FEV1 or Peak Expiratory Flow (PEF) to ensure there is no significant airflow obstruction."
+                },
+                {
+                    "character": "School-Bus-Soccer-Ball",
+                    "question": "The 'School-Bus-Soccer-Ball' represents normal life participation. What does the GINA guideline specify regarding this target for well-controlled asthma?",
+                    "options": [
+                        "Patients should only exercise after pre-medicating with oral steroids",
+                        "Patients should experience no limitation in physical activity or school/work attendance",
+                        "Exercise-induced bronchospasm is expected and should be ignored",
+                        "Patients must avoid all outdoor activities to prevent allergen exposure"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "A primary goal of asthma management (School-Bus-Soccer-Ball) is the ability to engage in normal physical activity and daily routines without symptoms or limitations."
+                },
+                {
+                    "character": "Happy Caregiver-Cupcake",
+                    "question": "How does the 'Happy Caregiver-Cupcake' concept integrate into the Global Initiative for Asthma (GINA) management cycle?",
+                    "options": [
+                        "It focuses solely on the cost of the medications",
+                        "It emphasizes patient and caregiver satisfaction as a metric for treatment adherence and success",
+                        "It refers to the use of sugar-coated tablets for pediatric patients",
+                        "It indicates that caregivers should adjust dosages without medical supervision"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Patient and caregiver satisfaction (Happy Caregiver-Cupcake) is a qualitative but essential target, as it influences long-term adherence to the treatment plan and quality of life."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 3: Reducing Future Risk and Identifying Risk Factors",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Asthma Adverse Outcomes and Exacerbation Risk Factors",
+            "facts": [
+                "Adverse outcomes include exacerbations, suboptimal lung development (children), and loss of lung function (adults)",
+                "Major risk factor is a history of ≥1 exacerbation in the past year",
+                "Treatment risks include adverse effects from systemic glucocorticoids",
+                "Behavioral risks include poor medication adherence and incorrect inhaler technique",
+                "Environmental risks include smoking tobacco/cannabis or vaping",
+                "Clinical indicators include low lung function, elevated FeNO, and blood eosinophilia"
+            ],
+            "story": "Professor Wheezy-Wait is standing in front of a giant classroom chalkboard, trying to keep his students' 'Lungs' from shrinking! He points to a 'Calendar with a Big Red X' from last year, warning that if you've tripped once, you'll trip again. Suddenly, a student named 'Gluco-Gorgon' starts growing extra limbs from eating too many 'Steroid Sandwiches'. Across the room, 'Vaping-Viper' is blowing thick clouds of smoke, while 'Sticky-Note Sam' forgets to use his inhaler correctly, using it as a trumpet instead of a medicine tool! The Professor frantically checks his 'FeNO-Meter' which is glowing bright red, and his 'Eosinophil-Elephant' mascot starts trumpeting loudly because its blood is full of pink glitter!",
+            "associations": [
+                {
+                    "character": "Shrinking Lungs",
+                    "medicalTerm": "Suboptimal Lung Development and Loss of Function",
+                    "explanation": "Represents the long-term structural damage in children and adults."
+                },
+                {
+                    "character": "Calendar with a Big Red X",
+                    "medicalTerm": "History of ≥1 exacerbation in past year",
+                    "explanation": "The strongest predictor for future asthma attacks."
+                },
+                {
+                    "character": "Gluco-Gorgon with Steroid Sandwiches",
+                    "medicalTerm": "Systemic Glucocorticoid Adverse Effects",
+                    "explanation": "Represents the side effects of high-dose or frequent steroid use."
+                },
+                {
+                    "character": "Inhaler Trumpet",
+                    "medicalTerm": "Incorrect Inhaler Technique",
+                    "explanation": "Using the device wrong leads to poor control."
+                },
+                {
+                    "character": "Vaping-Viper",
+                    "medicalTerm": "Smoking and Vaping Risks",
+                    "explanation": "Tobacco, cannabis, and vaping are major environmental triggers."
+                },
+                {
+                    "character": "FeNO-Meter and Eosinophil-Elephant",
+                    "medicalTerm": "Elevated FeNO and Blood Eosinophilia",
+                    "explanation": "Clinical biomarkers indicating high risk for exacerbation."
+                }
+            ],
+            "visualPrompt": "A hyper-vibrant 3D Chibi/Pixar style scene featuring a Professional Educator at a high-tech university podium. The educator has large expressive eyes and is pointing a laser at a holographic lung that is shrinking. To the left, a goofy pink elephant covered in glitter (Eosinophilia) dances. To the right, a student is holding a calendar with a massive '1' circled in red ink. Cinematic lighting, bright saturated blues and oranges, highly detailed textures, and a wacky classroom background."
+        },
+        "visual_prompt": "**Visual Prompt for Image Generation:**\n\n**Theme:** Professional Educator\n**Style:** High-quality, detailed educational illustration. A blend of a classic \"Magic School Bus\" aesthetic with a modern, 3D-rendered medical textbook style. The lighting is cinematic, highlighting the chaos in a high-ceilinged, ivy-league university lecture hall.\n\n**Subject Description:**\nIn a grand, wood-paneled lecture hall, **Professor Wheezy-Wait**—a distinguished academic with elbow patches, spectacles, and a worried expression—stands before a massive floor-to-ceiling chalkboard covered in complex respiratory diagrams. He is desperately holding up two large, transparent, anatomical **\"Shrinking Lungs\"** that look like deflating balloons, representing suboptimal lung development.\n\nTo his left, a massive **\"Calendar with a Big Red X\"** (marked on last year’s date) hangs like a warning banner, casting a shadow over the scene. In the front row, a student named **\"Gluco-Gorgon\"** is undergoing a bizarre transformation; they are sprouting extra muscular limbs and looking bloated while greedily devouring a stack of **\"Steroid Sandwiches\"** (labeled with \"Prednisone\" toothpicks).\n\nIn the center aisle, **\"Vaping-Viper\"**—a student with reptilian features—is exhaling a massive, swirling neon cloud of vapor that obscures the view of the blackboard. Nearby, **\"Sticky-Note Sam\"** is depicted in a state of confusion, holding a blue rescue inhaler to his lips like a **trumpet**, blowing a \"Ta-da!\" note instead of inhaling.\n\nThe Professor’s desk features a high-tech **\"FeNO-Meter\"** device that is glowing an alarming, incandescent red. Beside him, the university mascot, a large **\"Eosinophil-Elephant\"** with pink-tinted skin, is trumpeting at the ceiling; its trunk sprays a mist of **bright pink glitter**, representing a high blood eosinophil count.\n\n**Composition and Lighting:**\n*   **Perspective:** Wide-angle shot from the back of the classroom looking toward the Professor, capturing the full scale of the academic disaster.\n*   **Lighting:** Bright, focused \"spotlight\" on the Professor, with hazy, volumetric light filtering through the \"Vaping-Viper's\" clouds.\n*   **Color Palette:** Warm mahogany woods of the classroom contrasted with the alarming \"Medical Red\" of the FeNO-meter and the \"Inflammation Pink\" of the Eosinophil-Elephant.\n*   **Details:** The chalkboard is filled with the text \"Risk Factors: Exacerbation & Adverse Outcomes\" in elegant cursive.\n\n**Keywords:** Professional Educator, Medical Illustration, Surrealism, Educational Poster, Clinical Pathophysiology, Highly Detailed, 8k Resolution, Cinematic Lighting.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Shrinking Lungs",
+                    "question": "Which of the following describes a long-term respiratory adverse outcome associated with chronic asthma, particularly in children failing to meet growth milestones?",
+                    "options": [
+                        "Reversible bronchoconstriction",
+                        "Suboptimal lung development and accelerated FEV1 decline",
+                        "Isolated right ventricular hypertrophy",
+                        "Formation of hyaline membranes"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Adverse outcomes in asthma include suboptimal lung development in children and a permanent loss of lung function in adults due to airway remodeling."
+                },
+                {
+                    "character": "Calendar with a Big Red X",
+                    "question": "A patient with persistent asthma reports one severe exacerbation requiring oral steroids six months ago. What does this history most strongly indicate?",
+                    "options": [
+                        "A low risk of future exacerbations",
+                        "The highest independent risk factor for future exacerbations",
+                        "A need to discontinue inhaled corticosteroids",
+                        "Confirmation of a non-eosinophilic phenotype"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "A history of one or more exacerbations in the past year is the single most important predictor of future exacerbation risk."
+                },
+                {
+                    "character": "Gluco-Gorgon with Steroid Sandwiches",
+                    "question": "A patient requires frequent courses of systemic glucocorticoids for asthma control. Which adverse effect is most closely associated with this treatment modality?",
+                    "options": [
+                        "Hypocalcemia and increased bone density",
+                        "Adrenal insufficiency and iatrogenic Cushing syndrome",
+                        "Permanent bronchodilation",
+                        "Decreased risk of opportunistic infections"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Systemic glucocorticoids carry significant risks including osteoporosis, adrenal suppression, and Cushingoid features, highlighting the need for steroid-sparing strategies."
+                },
+                {
+                    "character": "Inhaler Trumpet",
+                    "question": "During a review of a patient with poorly controlled asthma despite high-dose therapy, what should be the first clinical assessment performed?",
+                    "options": [
+                        "Immediate referral for bronchial thermoplasty",
+                        "Switching to an injectable biologic agent",
+                        "Verification of inhaler technique and medication adherence",
+                        "Chest CT to rule out bronchiectasis"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Behavioral factors such as incorrect inhaler technique and poor adherence are common, modifiable drivers of poor asthma control and exacerbations."
+                },
+                {
+                    "character": "Vaping-Viper",
+                    "question": "Which environmental exposure is recognized as a significant risk factor for increased asthma severity and resistance to standard corticosteroid therapy?",
+                    "options": [
+                        "Exposure to high-altitude environments",
+                        "Dietary intake of polyunsaturated fats",
+                        "Smoking tobacco, cannabis, or vaping",
+                        "Occasional use of acetaminophen"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Smoking and vaping are major environmental risks that contribute to airway inflammation and may decrease the efficacy of inhaled corticosteroids."
+                },
+                {
+                    "character": "FeNO-Meter and Eosinophil-Elephant",
+                    "question": "Which set of biomarkers, when elevated, suggests a Type 2 inflammatory profile and an increased risk of asthma exacerbations?",
+                    "options": [
+                        "Low FeNO and high serum procalcitonin",
+                        "High FeNO and peripheral blood eosinophilia",
+                        "High sweat chloride and low serum IgE",
+                        "High C-reactive protein and low blood eosinophils"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Elevated Fraction of exhaled Nitric Oxide (FeNO) and blood eosinophilia are clinical indicators of Type 2 airway inflammation and higher exacerbation risk."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 4: Essential Patient Education and Inhaler Technique",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Patient Education in Asthma Management",
+            "facts": [
+                "Primary clinician one-on-one education is the most effective delivery method.",
+                "Correct inhaler technique involves demonstration, observation, and correction.",
+                "Valved holding chambers (spacers) improve delivery and reduce coordination errors with MDIs.",
+                "Minimizing the number of different inhaler types reduces the risk of confusion and error.",
+                "Key education points: asthma definition, triggers, relief vs. control meds, technique, and adherence barriers.",
+                "Effective education leads to decreased hospitalizations and increased patient satisfaction."
+            ],
+            "story": "Welcome to Principal Pri-Mary’s (Primary Clinician) private classroom! She knows that 1-on-1 time is the secret sauce for success. She picks up a glowing 'In-Hula Hoop' (Inhaler) and performs a perfect spin (Demonstrate), then watches her student try it (Observe) before fixing their wiggly elbows (Correct). To make sure the 'Hoop' medicine doesn't miss, she introduces 'Space-Sir' (Spacer), a tiny knight in a space-suit who acts as a steady bridge. Principal Pri-Mary insists on 'Simple Simon' rules: only one hoop allowed to avoid a mess (Simplicity). Suddenly, the 'Quiz-ard' (Key Questions) appears, asking five riddles about triggers and relief. Because the student passes, the 'Hospital-Hut' across the street slams its doors shut because nobody needs to go there anymore, and everyone gets a giant 'Satisfied Smile' sticker!",
+            "associations": [
+                {
+                    "character": "Principal Pri-Mary",
+                    "medicalTerm": "Primary Clinician Education",
+                    "explanation": "Direct one-on-one education by the provider is the gold standard for patient learning."
+                },
+                {
+                    "character": "In-Hula Hoop Spin-Watch-Fix",
+                    "medicalTerm": "Demonstrate-Observe-Correct",
+                    "explanation": "Clinicians must show the technique, watch the patient do it, and provide immediate feedback."
+                },
+                {
+                    "character": "Space-Sir the Knight",
+                    "medicalTerm": "Valved Holding Chamber (Spacer)",
+                    "explanation": "Spacers help patients who struggle with the timing of pressing the inhaler and breathing in."
+                },
+                {
+                    "character": "Simple Simon",
+                    "medicalTerm": "Device Simplicity",
+                    "explanation": "Using the fewest types of inhalers possible prevents confusion and medication errors."
+                },
+                {
+                    "character": "The Quiz-ard",
+                    "medicalTerm": "Essential Patient Knowledge",
+                    "explanation": "Patients must identify triggers, distinguish between rescue and controller meds, and name barriers to use."
+                },
+                {
+                    "character": "Closed Hospital-Hut",
+                    "medicalTerm": "Reduced Exacerbations",
+                    "explanation": "Proper education directly leads to fewer emergency visits and hospital stays."
+                }
+            ],
+            "visualPrompt": "Professional Educator Theme: A vibrant Pixar-style 3D scene inside a whimsical classroom. Principal Pri-Mary, a Chibi educator with oversized glasses and a lab coat, is teaching a Chibi student. She holds a glowing purple inhaler. Between them stands 'Space-Sir,' a tiny 3D knight in a silver astronaut suit. A floating, magical 'Quiz-ard' hat with five glowing fingers hovers above them. Through a window, a colorful hospital building has a 'CLOSED' sign made of balloons. The colors are hyper-saturated with cinematic lighting, depth of field, and a playful, high-energy atmosphere."
+        },
+        "visual_prompt": "thought)\n\nPatient Education in Asthma Management.\nPrincipal Pri-Mary (Primary Clinician), In-Hula Hoop (Inhaler), Space-Sir (Spacer/Knight), Simple Simon (Simplicity/One Hoop), Quiz-ard (Questions), Closed Hospital-Hut (Reduced Exacerbations).\nDemonstrate-Observe-Correct, Spacers, Simplicity, Essential Knowledge, Reduced Hospitalization.\nProfessional Educator.\nHighly detailed visual prompt for an image generator, focusing on clarity, consistency, and explicit reference to the \"Professional Educator\" theme.\n\n    *   *Setting:* A cozy, private \"classroom\" that feels like a modern clinical office but with educational flair. Think polished wood, soft lighting, and high-end instructional posters.\n    *   *Principal Pri-Mary:* She needs to look professional but approachable. A lab coat with a teacher's twist (maybe a stylish lanyard or a blazer/scrubs hybrid). She is the embodiment of a \"Professional Educator.\"\n    *   *The In-Hula Hoop & Space-Sir:* These need to look like whimsical versions of medical devices. The hoop should glow; the spacer should literally look like a tiny knight in a spacesuit.\n    *   *The Student:* A patient (maybe a child or teenager) looking engaged.\n    *   *The Quiz-ard:* A floating, friendly holographic wizard holding a tablet or scroll.\n    *   *The Hospital-Hut:* Visible through a window, looking small and locked up.\n    *   *Style:* Vibrant, clean, 3D digital art (Pixar-esque or high-end educational illustration) to maintain professional clarity while being engaging.\n\n    *   *Keywords:* Professional, clean, instructional, modern, empathetic.\n    *   *Environment:* \"A bright, modern private classroom designed for high-level clinical instruction.\"\n    *   *Action:* Pri-Mary is in the middle of a \"Demonstrate-Observe-Correct\" cycle.\n    *   *Lighting:* Warm, focused \"spotlight\" on the interaction to emphasize the one-on-one nature.**Visual Prompt: The Professional Educator’s Asthma Academy**\n\n**Style:** High-end, 3D digital illustration with a \"Professional Educator\" aesthetic—clean lines, vibrant colors, and a polished, instructional atmosphere. The scene should feel like a high-budget educational animation, combining clinical precision with whimsical storytelling.\n\n**The Setting:**\nA bright, modern \"Private Classroom\" that blends a high-tech medical office with a cozy learning environment. In the background, a large window reveals a sunny street where the \"Hospital-Hut\" (a small, stylized clinic building) has a giant \"CLOSED\" sign and heavy padlocks on its doors.\n\n**The Main Characters & Actions:**\n*   **Principal Pri-Mary:** Standing center-stage is the **Professional Educator**, a poised clinician wearing a stylish teal lab coat over professional attire. She has an empathetic smile and holds a glowing, translucent \"In-Hula Hoop\" (the inhaler). She is mid-demonstration, showing a \"Perfect Spin.\"\n*   **The Student:** A focused young patient sits across from her, holding their own hoop and mimicking her posture. Principal Pri-Mary’s hand is gently guiding the student’s elbow to \"Correct\" their form, illustrating the **Demonstrate-Observe-Correct** technique.\n*   **Space-Sir the Knight:** Connecting the student’s mouth to the glowing In-Hula Hoop is \"Space-Sir,\" a tiny, brave knight clad in high-tech, transparent astronaut armor. He forms a steady, protective bridge (the **Spacer**) that helps the \"medicine mist\" travel safely.\n*   **Simple Simon:** Standing near a minimalist equipment rack is a friendly, minimalist figure named \"Simple Simon.\" He holds up a sign with a large \"1\" on it, pointing to the single hoop the student is using to represent **Device Simplicity**.\n\n**The Magical Elements:**\n*   **The Quiz-ard:** Floating nearby is a friendly, holographic \"Quiz-ard\" wearing a graduation cap. He holds a glowing scroll featuring five clear icons (a cat, a dust cloud, a lightning bolt, a heart, and a clock) representing the **Essential Patient Knowledge** riddles.\n*   **The Satisfied Smile:** Hovering above the student’s head is a large, golden \"Satisfied Smile\" sticker that glows with a soft light, symbolizing a successful education session.\n\n**Composition and Lighting:**\n*   **Theme Integration:** The overall composition emphasizes the **Professional Educator** theme through orderly arrangement, clear visual hierarchies, and a focus on the \"Gold Standard\" of one-on-one interaction.\n*   **Lighting:** Warm, focused lighting hits the \"In-Hula Hoop\" and the \"Space-Sir\" knight to highlight the medical tools, while the background remains bright and cheerful to signify a world without hospital visits.\n*   **Details:** Ensure the textures of the lab coat look crisp and professional, and the \"In-Hula Hoop\" has a magical, shimmering \"medicine mist\" inside it.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Principal Pri-Mary",
+                    "question": "Studies indicate that the most significant reduction in asthma-related emergency visits occurs when educational interventions are delivered via which modality?",
+                    "options": [
+                        "Interactive web-based modules",
+                        "One-on-one sessions with a primary clinician",
+                        "Group-based community workshops",
+                        "Automated phone-call reminders"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Individualized, one-on-one education provided by a primary clinician is recognized as the most effective delivery method for improving patient outcomes in asthma management."
+                },
+                {
+                    "character": "In-Hula Hoop Spin-Watch-Fix",
+                    "question": "Which sequence is considered the gold standard for ensuring a patient has mastered the use of a new inhaler device?",
+                    "options": [
+                        "Verbal description, written pamphlet, and follow-up call",
+                        "Observation only, followed by pharmacist verification",
+                        "Demonstration by clinician, observation of patient, and correction of errors",
+                        "Reviewing the manufacturer's video followed by a written quiz"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "The 'show-tell-do' approach—demonstration, observation, and correction—is essential to ensure the patient possesses the physical coordination necessary for effective drug delivery."
+                },
+                {
+                    "character": "Space-Sir the Knight",
+                    "question": "What is the primary physiological benefit of utilizing a valved holding chamber (VHC) in conjunction with a pressurized metered-dose inhaler (pMDI)?",
+                    "options": [
+                        "It increases the velocity of the aerosolized particles",
+                        "It eliminates the need for deep inspiration",
+                        "It reduces oropharyngeal deposition and mitigates coordination errors",
+                        "It chemically stabilizes the propellant before it reaches the lungs"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Spacers or VHCs slow down the aerosol particles and trap larger droplets, reducing the amount of drug that hits the back of the throat and increasing the proportion of medication that reaches the lower airways."
+                },
+                {
+                    "character": "Simple Simon",
+                    "question": "When designing a long-term asthma treatment plan for a patient requiring multiple medications, which strategy is most likely to improve adherence and reduce technical errors?",
+                    "options": [
+                        "Using different colors for every device type",
+                        "Minimizing the number of different types of inhaler devices used",
+                        "Switching the patient to nebulizer-only therapy",
+                        "Prescribing a different brand for the rescue inhaler versus the controller"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Maintaining consistency in device types (e.g., all MDIs or all DPis) reduces the cognitive load on the patient and minimizes the risk of mixing up inhalation techniques."
+                },
+                {
+                    "character": "The Quiz-ard",
+                    "question": "Which of the following topics is considered an essential 'key education point' that must be verified during an initial asthma education session?",
+                    "options": [
+                        "The molecular structure of inhaled corticosteroids",
+                        "The distinction between 'reliever' (rescue) and 'controller' medications",
+                        "The historical prevalence of asthma in different geographic regions",
+                        "The specific manufacturing process of the prescribed spacer"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Effective self-management requires patients to understand the difference between medications meant for acute symptoms (relievers) and those meant for daily maintenance (controllers)."
+                },
+                {
+                    "character": "Closed Hospital-Hut",
+                    "question": "Which clinical outcome is most consistently associated with high-quality patient education in asthma management?",
+                    "options": [
+                        "Increased use of systemic oral corticosteroids",
+                        "Higher rates of medication side effects",
+                        "Decreased hospitalizations and improved patient satisfaction",
+                        "Increased need for specialist referrals"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Comprehensive patient education empowers patients to manage their condition at home, leading to fewer exacerbations requiring hospitalization and overall higher satisfaction with care."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 5: The Asthma Action Plan",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Asthma Action Plan",
+            "facts": [
+                "Personalized written document for home medication adjustments",
+                "Identifies declines in asthma control early",
+                "Directs treatment based on symptoms or peak flow (PEF/FEV1)",
+                "Required by schools, daycare, and camps",
+                "Key versions include NAEPP, GINA, and MART-based plans"
+            ],
+            "story": "Meet Professor Action, a tiny chibi educator with a glowing 'Action Map' scroll. He’s teaching a class of wild kids at the 'Camp Wheeze-a-Lot' (Symptom Identification). When a giant 'Puff-o-Meter' (PEF/FEV1) drops its needle into the red, Professor Action pulls out a 'Ginna-Pig' (GINA) and a 'Marty the Smarty' (MART) robot to calculate the exact dosage of 'Magic Mist' needed. Suddenly, a school bus driven by a giant 'Nap-Pea' (NAEPP) arrives, demanding everyone show their 'Golden Permission Slip' (School/Camp Requirement) before they can adjust their inhalers!",
+            "associations": [
+                {
+                    "character": "Professor Action",
+                    "medicalTerm": "Asthma Action Plan",
+                    "explanation": "The personalized written document guiding the patient."
+                },
+                {
+                    "character": "Action Map Scroll",
+                    "medicalTerm": "Medication Adjustment",
+                    "explanation": "Instructions for changing doses based on symptoms."
+                },
+                {
+                    "character": "Puff-o-Meter",
+                    "medicalTerm": "PEF/FEV1 Monitoring",
+                    "explanation": "Home measurements used to trigger plan adjustments."
+                },
+                {
+                    "character": "Golden Permission Slip",
+                    "medicalTerm": "School/Camp Requirements",
+                    "explanation": "The legal necessity of the plan for child-care settings."
+                },
+                {
+                    "character": "Ginna-Pig, Marty, and Nap-Pea",
+                    "medicalTerm": "GINA, MART, and NAEPP",
+                    "explanation": "The major clinical guidelines and specific plan formats."
+                }
+            ],
+            "visualPrompt": "A hyper-vibrant 3D Pixar-style scene featuring a tiny Chibi 'Professional Educator' wearing an oversized mortarboard and a lab coat. He is standing on a giant, colorful document titled 'The Action Plan' in a school playground. Surrounding him are a robotic 'Marty' calculator and a fluffy 'Ginna-Pig'. In the background, a school bus shaped like a giant green pea (NAEPP) is pulling up. The lighting is cinematic with bright saturation, showing children holding golden scrolls while a giant Peak Flow meter indicates a yellow warning zone."
+        },
+        "visual_prompt": "thought)**Visual Prompt: The Asthma Action Academy with Professor Action**\n\n**Theme:** Professional Educator\n**Style:** Vibrant 3D digital illustration, high-detail chibi-style characters, cinematic lighting, educational whimsical realism.\n\n**Central Composition:**\nIn the center of a bustling \"Camp Wheeze-a-Lot\" classroom, **Professor Action**—a tiny, 3-foot-tall chibi educator wearing a crisp tweed vest, a miniature bow tie, and glowing spectacles—stands authoritatively on a stack of giant medical textbooks. He embodies the **Professional Educator** theme, pointing a wooden teacher’s rod toward a floating, holographic **\"Action Map\" Scroll**. The scroll is unfurled, shimmering with gold-inked instructions and diagrams showing medication adjustments.\n\n**The Background (Symptom Identification):**\nThe background is a vibrant campsite filled with \"wild kids\" (chibi-style) who are displaying various exaggerated symptoms (clutching chests, coughing into colorful handkerchiefs). In the corner, a massive, steam-punk style **\"Puff-o-Meter\"** (representing PEF/FEV1) towers over the room. Its giant pressure gauge needle has just slammed into a bright red \"Danger Zone,\" triggering flashing red emergency lights.\n\n**The Guidelines (Characters):**\nNext to Professor Action stand his teaching assistants:\n*   **Ginna-Pig:** A fluffy, bespectacled guinea pig (representing GINA guidelines) wearing a lab coat and holding a tiny clipboard.\n*   **Marty the Smarty:** A sleek, white-and-blue high-tech robot (representing MART therapy) with a digital screen on its chest displaying a \"Magic Mist\" (inhaler) dosage calculation.\n*   **The Nap-Pea Bus:** Crashing through the scene is a giant, sentient green pea shaped like a school bus (representing NAEPP). The \"Nap-Pea\" driver wears a stern crossing-guard hat and holds out a glowing **\"Golden Permission Slip\"** (the legal plan requirement) that everyone must sign.\n\n**Visual Details & Atmosphere:**\n*   **Lighting:** Bright, scholarly lighting with a focus on the glowing \"Action Map.\"\n*   **Textures:** The fuzzy fur of the Ginna-Pig, the metallic sheen of Marty the Smarty, and the magical blue \"Magic Mist\" vapor swirling in the air.\n*   **Tone:** Educational yet adventurous; a professional pedagogical setting transformed into a high-stakes rescue mission.\n*   **Details:** On the wall, a chalkboard is covered in complex \"Wheeze-a-Lot\" equations and lung diagrams, reinforcing the **Professional Educator** atmosphere.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Professor Action",
+                    "question": "A patient with persistent asthma is prescribed a personalized document that outlines specific home medication adjustments. What is the primary clinical objective of this tool in the context of chronic management?",
+                    "options": [
+                        "To provide a legal waiver for emergency department physicians",
+                        "To facilitate early identification of declining control and prompt self-initiated therapy",
+                        "To replace the need for regular follow-up visits with a pulmonologist",
+                        "To serve as a strictly diagnostic log for retrospective analysis"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Professor Action represents the Asthma Action Plan, which is designed to help patients recognize early signs of worsening asthma and adjust medications at home to prevent severe exacerbations."
+                },
+                {
+                    "character": "Action Map Scroll",
+                    "question": "When a patient uses their Action Map Scroll for medication adjustment during a 'yellow zone' symptom flare, what is the most common pharmacological intervention recommended by national guidelines?",
+                    "options": [
+                        "Increasing the dose of inhaled corticosteroids or initiating a short course of oral corticosteroids",
+                        "Discontinuing all maintenance therapy until symptoms resolve",
+                        "Switching from an ICS-formoterol regimen to a SABA-only regimen",
+                        "Initiating long-term oxygen therapy for home use"
+                    ],
+                    "correctOptionIndex": 0,
+                    "explanation": "Medication adjustment instructions in an action plan typically involve increasing anti-inflammatory therapy, such as doubling the ICS dose or adding oral steroids, to manage a decline in asthma control."
+                },
+                {
+                    "character": "Puff-o-Meter",
+                    "question": "The Puff-o-Meter refers to PEF/FEV1 monitoring. Which clinical scenario most strongly indicates the use of Peak Expiratory Flow (PEF) monitoring over symptom-based monitoring in an action plan?",
+                    "options": [
+                        "A patient with mild intermittent asthma and no history of exacerbations",
+                        "A 'poor perceiver' who does not recognize physiological signs of airway obstruction",
+                        "A pediatric patient under the age of four who cannot perform forced maneuvers",
+                        "A patient who only experiences exercise-induced bronchospasm"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "PEF monitoring is particularly useful for patients who are 'poor perceivers' of their symptoms, as objective data can alert them to a decline in lung function before they feel clinically distressed."
+                },
+                {
+                    "character": "Golden Permission Slip",
+                    "question": "The Golden Permission Slip represents requirements for schools and camps. Which of the following must be included in these documents to ensure the safety of a minor in a daycare setting?",
+                    "options": [
+                        "Authorization for the school nurse to perform intubation",
+                        "Written instructions for both rescue medication administration and emergency contact triggers",
+                        "A requirement that the child must be asymptomatic for 30 days prior to enrollment",
+                        "A list of all unsuccessful medications tried in the past decade"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Action plans required by schools and camps must specify how to handle rescue situations, including when to administer medication and when to call emergency services."
+                },
+                {
+                    "character": "Ginna-Pig, Marty, and Nap-Pea",
+                    "question": "Current GINA and MART-based protocols (represented by Ginna-Pig and Marty) differ from traditional NAEPP (Nap-Pea) guidelines primarily in their recommendation for which of the following?",
+                    "options": [
+                        "The use of a SABA as the sole treatment for all stages of asthma",
+                        "The use of a single inhaler containing both an ICS and formoterol for both maintenance and reliever therapy",
+                        "The complete removal of inhaled corticosteroids from the yellow zone treatment",
+                        "The prioritization of theophylline over inhaled therapy in pediatric populations"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "The MART (Maintenance and Reliever Therapy) approach, supported by GINA, uses a single ICS-formoterol inhaler for both daily maintenance and as-needed relief, whereas traditional NAEPP guidelines often utilized separate SABA and maintenance inhalers."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 6: Identifying and Controlling Asthma Triggers",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Asthma Triggers and Avoidance",
+            "facts": [
+                "Common allergens include pollen, pets, mold, and cockroaches.",
+                "Irritants like fumes, cigarette smoke, and air pollution exacerbate symptoms.",
+                "Physiologic triggers include respiratory viruses, stress, hormones, and exercise.",
+                "About 20% of adult asthma is linked to occupational exposures.",
+                "School-based triggers for children include mice, classroom pets, and pollutants.",
+                "Management involves adjusting medication for unavoidable triggers like cold air or exertion."
+            ],
+            "story": "Professor Wheeze is teaching a wild class in a 'Trigger-Proof' laboratory. To explain allergens, he points at a 'Paul-the-Hen' (Pollen) riding a 'Cock-a-Roach' scooter. Suddenly, a 'Smoky Irritant' cloud wearing a 'Cigarette Top-Hat' drifts in from a broken exhaust pipe. For physiologic triggers, a 'Virus-Viking' starts sprinting on a treadmill (Exercise) while sobbing (Stress). The Professor then points to a 'Construction Hard-Hat' (Occupational) representing 20% of his students, and a 'Little Mouse' carrying a tiny school backpack (School Exposure). To finish, he puts on a 'Scarf and Goggles' to show how to prepare for the 'Cold Air Blast' from his laboratory freezer!",
+            "associations": [
+                {
+                    "character": "Paul-the-Hen",
+                    "medicalTerm": "Pollen",
+                    "explanation": "A sound-alike for Pollen, a primary allergen trigger."
+                },
+                {
+                    "character": "Cock-a-Roach Scooter",
+                    "medicalTerm": "Cockroach Allergen",
+                    "explanation": "Represents cockroach droppings and remains as a potent indoor allergen."
+                },
+                {
+                    "character": "Cigarette Top-Hat Cloud",
+                    "medicalTerm": "Irritants (Cigarette Smoke)",
+                    "explanation": "Represents smoke and fumes that irritate the airways."
+                },
+                {
+                    "character": "Virus-Viking on Treadmill",
+                    "medicalTerm": "Respiratory Viruses and Exercise",
+                    "explanation": "Combines viral infections and physical exertion as physiological triggers."
+                },
+                {
+                    "character": "Construction Hard-Hat (20% size)",
+                    "medicalTerm": "Occupational Asthma",
+                    "explanation": "Represents the 20% of adult asthma cases caused by work-related exposures."
+                },
+                {
+                    "character": "Mouse with School Backpack",
+                    "medicalTerm": "School Exposure",
+                    "explanation": "Highlights school-specific triggers like rodents and classroom pets."
+                },
+                {
+                    "character": "Professor in Scarf and Goggles",
+                    "medicalTerm": "Pre-treatment for Unavoidable Triggers",
+                    "explanation": "Shows adjusting management for triggers like cold air and exertion."
+                }
+            ],
+            "visualPrompt": "A hyper-vibrant 3D Chibi-style scene featuring a Professional Educator with oversized glasses and a white coat in a chaotic lab. The Professor is pointing at a giant 3D '20%' symbol wearing a construction hat. Nearby, a Viking character with a runny nose runs on a treadmill. A tiny mouse with a school bag stands in the foreground. In the background, a cloud of smoke with a face and a top hat floats near a giant rooster on a scooter. Cinematic lighting, Pixar-style textures, exaggerated facial expressions, and neon color accents."
+        },
+        "visual_prompt": "**Visual Prompt:**\n\n\"A wide-angle, cinematic illustration of a 'Professional Educator' themed laboratory, styled as a whimsical but structured medical education infographic. The scene is set in the 'Trigger-Proof' laboratory, a sterile yet vibrant classroom with high-tech glass walls and polished steel surfaces. \n\nIn the center, **Professor Wheeze**, a sophisticated and authoritative educator with silver hair, wearing a crisp white lab coat over a tailored suit and a bow tie, uses a laser pointer to conduct a lesson on asthma triggers. \n\nThe laboratory is filled with vivid, character-based educational exhibits:\n*   **The Allergens:** In the foreground, 'Paul-the-Hen' (a giant, fluffy chicken covered in yellow dust) is riding a 'Cock-a-Roach' scooter (a sleek, motorized scooter shaped like a giant insect) across a lab bench.\n*   **The Irritants:** From a cracked chrome exhaust pipe in the corner, a sentient, grey 'Smoky Irritant' cloud drifts upward, sporting a dapper 'Cigarette Top-Hat.'\n*   **Physiological Triggers:** On a high-tech laboratory treadmill, a 'Virus-Viking' (a miniature, green, spiked germ wearing a horned helmet) is sprinting furiously while exaggeratedly sobbing to represent stress.\n*   **Specific Environments:** To the side, a group of students sit behind a desk marked with a large '20%' sign; they are all wearing bright yellow 'Construction Hard-Hats' to represent Occupational Asthma. Nearby, a tiny 'Little Mouse' sits on a stack of textbooks, wearing a miniature blue school backpack.\n*   **The Solution:** At the far end of the frame, a secondary version of the Professor (or a mannequin) is shown as a 'Professional Educator's Guide to Preparedness,' wearing a thick wool scarf and heavy-duty laboratory goggles, standing in front of a blast of frost emitting from an open industrial freezer.\n\n**Visual Style:** High-definition 3D render with a clean, 'medical-concept-art' aesthetic. Bright, clinical lighting with saturated colors for the characters. The atmosphere is educational, organized, and professional, emphasizing the clarity of each medical association within a busy but coherent classroom environment.\"",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Paul-the-Hen",
+                    "question": "Which of the following cellular responses is primarily responsible for the immediate-phase reaction when a sensitized patient is exposed to pollen allergens?",
+                    "options": [
+                        "IgG-mediated activation of the complement cascade",
+                        "IgE-mediated cross-linking on mast cell surfaces",
+                        "Delayed-type hypersensitivity mediated by Th1 cells",
+                        "Cytotoxic T-cell destruction of airway epithelium"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Pollen is a common allergen that triggers Type I hypersensitivity reactions, where IgE antibodies bound to mast cells cross-link upon allergen exposure, leading to degranulation and the release of histamine and leukotrienes."
+                },
+                {
+                    "character": "Cock-a-Roach Scooter",
+                    "question": "In inner-city environments, exposure to cockroach allergens is a major risk factor for asthma morbidity. What is the most effective environmental intervention to reduce this specific trigger?",
+                    "options": [
+                        "Increasing indoor humidity to over 60%",
+                        "Installing high-efficiency particulate air (HEPA) filters alone",
+                        "Integrated pest management combining bait, traps, and sealing entry points",
+                        "Regular washing of bed linens in cold water"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Cockroach allergen management requires integrated pest management (IPM) because the allergens are heavy and settle on surfaces, making air filtration less effective than physical removal and prevention."
+                },
+                {
+                    "character": "Cigarette Top-Hat Cloud",
+                    "question": "Passive exposure to cigarette smoke increases asthma severity and reduces the clinical response to which class of medication?",
+                    "options": [
+                        "Inhaled corticosteroids",
+                        "Short-acting beta-agonists",
+                        "Leukotriene receptor antagonists",
+                        "Long-acting muscarinic antagonists"
+                    ],
+                    "correctOptionIndex": 0,
+                    "explanation": "Smoking and environmental tobacco smoke can induce relative corticosteroid resistance in the airways, necessitating higher doses or alternative therapies to achieve asthma control."
+                },
+                {
+                    "character": "Virus-Viking on Treadmill",
+                    "question": "Exercise-induced bronchoconstriction (EIB) often occurs alongside viral respiratory infections. What is the primary pathophysiologic mechanism behind EIB?",
+                    "options": [
+                        "Direct viral invasion of the smooth muscle cells",
+                        "Reflex bradycardia leading to airway constriction",
+                        "Water loss and increased osmolarity of the airway surface liquid",
+                        "Excessive production of nitric oxide in the distal alveoli"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Exercise-induced bronchoconstriction is primarily triggered by the thermal and osmotic stress placed on the airways during the rapid respiration of cool, dry air, leading to mediator release from mast cells."
+                },
+                {
+                    "character": "Construction Hard-Hat (20% size)",
+                    "question": "A patient presents with asthma symptoms that improve significantly during weekends and vacations. Given that approximately 20% of adult-onset asthma is occupational, which of the following agents is a common 'high-molecular-weight' cause?",
+                    "options": [
+                        "Isocyanates",
+                        "Plastics",
+                        "Flour dust",
+                        "Electronic soldering fumes"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Occupational asthma is often categorized by high-molecular-weight agents (like flour, grain dust, or animal proteins) which induce an IgE-mediated response, and low-molecular-weight agents (like isocyanates)."
+                },
+                {
+                    "character": "Mouse with School Backpack",
+                    "question": "In the context of school-based asthma triggers, mouse allergen levels are often higher in classrooms than in the students' homes. Where is this allergen primarily concentrated?",
+                    "options": [
+                        "In the classroom's HVAC cooling coils",
+                        "In settled floor dust and cabinets",
+                        "Within the pages of library books",
+                        "In the school cafeteria's steam tables"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Mouse allergens in schools are typically found in settled dust on floors and in storage areas; they are a significant contributor to asthma morbidity in school-aged children."
+                },
+                {
+                    "character": "Professor in Scarf and Goggles",
+                    "question": "A patient with well-controlled asthma experiences symptoms only when skiing in cold air. What is the recommended pharmacological approach for this unavoidable trigger?",
+                    "options": [
+                        "Continuous oral prednisone for the duration of the winter",
+                        "Inhaled SABA or low-dose ICS-formoterol 5-20 minutes before exposure",
+                        "Discontinuation of all controller medications to prevent tolerance",
+                        "Switching to a long-acting muscarinic antagonist (LAMA) monotherapy"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "For unavoidable triggers like exercise or cold air, pre-treatment with a short-acting beta-agonist (SABA) or a low-dose ICS-formoterol inhaler is the standard of care to prevent bronchoconstriction."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 7: Immunizations and Antiviral Strategies",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Respiratory Infection Management in Asthma",
+            "facts": [
+                "Vaccines for Influenza, Pneumococcus, Pertussis, SARS-CoV-2, and RSV are strongly encouraged.",
+                "Adults 19-64 with asthma require an additional pneumococcal vaccination.",
+                "Paxlovid (Nirmatrelvir/ritonavir) interacts with LABAs like salmeterol and vilanterol; LABAs must be held.",
+                "Zanamivir is contraindicated in asthma patients due to bronchospasm risk.",
+                "Prednisone doses ≥20 mg daily require immunocompromised vaccine scheduling.",
+                "Biologics might slightly reduce vaccine antibody levels, but clinical significance is unclear."
+            ],
+            "story": "Professor Wheeze is teaching a class in a giant lung-shaped auditorium! He starts by juggling five glowing shields representing the 'Big Five' vaccines: a Flute (Flu), a New-Mocker (Pneumococcus), a Purring-Puss (Pertussis), a Spike-Ball (SARS-CoV-2), and a Resvi-Robot (RSV). Suddenly, a 19-64 year old student gets a second New-Mocker shield thrown at them! The Professor then stops a student from eating 'Pax-Lover' chocolates because they are holding 'Salmon-Meter' (Salmeterol) and 'Villain-Trolley' (Vilanterol) toys, which start vibrating dangerously. A student named 'Zana-Vampire' tries to enter, but the Professor blocks her with a 'No Breathing' sign because her cape causes chest-tightening smoke. He then points at a student holding '20-Pounds' of Prednisone-Pizza, telling them they need a special 'Immunocompromised' VIP pass for the vaccine line. Finally, he shows a 'Bio-Logic' logic puzzle that slightly fades when a vaccine touches it, but he just shrugs his shoulders because it doesn't seem to matter!",
+            "associations": [
+                {
+                    "character": "Flute, New-Mocker, Purring-Puss, Spike-Ball, Resvi-Robot",
+                    "medicalTerm": "Influenza, Pneumococcus, Pertussis, SARS-CoV-2, RSV Vaccines",
+                    "explanation": "The core set of vaccinations recommended for asthma patients."
+                },
+                {
+                    "character": "Student 19-64 getting a second New-Mocker shield",
+                    "medicalTerm": "Pneumococcal booster for adults 19-64",
+                    "explanation": "Specific age group with asthma needs an extra pneumococcal dose."
+                },
+                {
+                    "character": "Pax-Lover chocolate vs. Salmon-Meter & Villain-Trolley",
+                    "medicalTerm": "Paxlovid interaction with Salmeterol and Vilanterol",
+                    "explanation": "Nirmatrelvir/ritonavir interacts with long-acting beta-agonists; LABAs must be paused."
+                },
+                {
+                    "character": "Zana-Vampire with No-Breathing sign",
+                    "medicalTerm": "Zanamivir contraindication",
+                    "explanation": "Zanamivir can cause bronchospasm and is avoided in asthma."
+                },
+                {
+                    "character": "20-Pounds of Prednisone-Pizza",
+                    "medicalTerm": "Prednisone ≥20 mg daily",
+                    "explanation": "Dosage threshold that requires following the immunocompromised vaccination schedule."
+                },
+                {
+                    "character": "Fading Bio-Logic puzzle",
+                    "medicalTerm": "Biologics and antibody response",
+                    "explanation": "Biologics may slightly decrease antibody levels post-vaccination with uncertain clinical impact."
+                }
+            ],
+            "visualPrompt": "A hyper-vibrant 3D Chibi Pixar-style scene of a quirky Professional Educator with oversized glasses and a lab coat standing in a glowing, pink lung-shaped classroom. He is juggling five neon shields while a student holds a giant '20' made of pizza slices. In the background, a 'Salmon-Meter' toy is vibrating next to a box of 'Pax-Lover' chocolates. A 'Zana-Vampire' character is being shooed away from an inhaler. The colors are cinematic, with high-contrast blues and oranges, and every character has exaggerated, expressive facial features."
+        },
+        "visual_prompt": "thought)**Visual Prompt: The Grand Lecture of Professor Wheeze**\n\n**Theme:** Professional Educator\n**Style:** Cinematic, highly detailed 3D digital illustration with a scholarly yet whimsical atmosphere. The lighting is warm and academic, reminiscent of a prestigious university hall but with surreal medical elements.\n\n**Scene Description:**\nIn a magnificent, cavernous auditorium shaped like the interior of a giant, translucent human lung—complete with glowing bronchiole arches and soft pink walls—**Professor Wheeze**, a distinguished, silver-haired academic in a sharp tweed waistcoat and spectacles, stands center stage. He embodies the **Professional Educator**, maintaining a calm, commanding, and instructional presence amidst a whirlwind of activity.\n\n**Key Visual Elements:**\n*   **The Big Five Juggling Act:** Professor Wheeze is expertly juggling five glowing, holographic shields. Each shield features a distinct icon: a golden **Flute** (Influenza), a jagged **New-Mocker** stone (Pneumococcus), a soft **Purring-Puss** cat (Pertussis), a glowing **Spike-Ball** (SARS-CoV-2), and a metallic **Resvi-Robot** (RSV).\n*   **The Pneumococcal Lesson:** To the side, the Professor has just tossed a second **New-Mocker shield** to a focused student aged 19-64, illustrating the specific booster requirement for this age group.\n*   **The Paxlovid Interaction:** In the foreground, the Professor uses a firm, \"stop\" hand gesture toward a student attempting to eat a box of **'Pax-Lover' chocolates**. The student is holding toys of a **'Salmon-Meter'** (a fish-shaped inhaler) and a **'Villain-Trolley'** (a miniature spiked cart), which are vibrating violently with red energy streaks to indicate a dangerous interaction.\n*   **The Zanamivir Contraindication:** At the auditorium door, a gothic student named **'Zana-Vampire'** attempts to enter. The Professor points a stern finger at a glowing **'No Breathing' sign** (a circle with a slash through a pair of lungs) because her dark, smoky cape is swirling into the room, mimicking bronchospasm.\n*   **The VIP Prednisone Pizza:** Near the front row, a student struggles to hold a massive, heavy box labeled **'20-Pounds'** filled with a **'Prednisone-Pizza.'** The Professor is handing them a glowing **'Immunocompromised VIP Pass'** with a scholarly nod, indicating they follow a different vaccination track.\n*   **The Biologic Puzzle:** On a side lectern, a complex, glowing **'Bio-Logic' logic puzzle** sits. As one of the vaccine shields brushes past it, the puzzle's light slightly dims or fades. The Professor is depicted with a sophisticated, professional shrug, looking at the puzzle with a \"not clinically significant\" expression.\n\n**Technical Details:**\n*   **Color Palette:** Deep mahoganies, soft lung-pinks, and vibrant neon glows from the shields.\n*   **Composition:** Wide-angle shot to capture the scale of the lung auditorium, with the Professor as the focal point.\n*   **Atmosphere:** Educational, authoritative, and meticulously organized, highlighting the Professor’s role as an expert guide through complex medical management.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Flute, New-Mocker, Purring-Puss, Spike-Ball, Resvi-Robot",
+                    "question": "Which of the following describes the current consensus regarding immunizations for patients with chronic asthma?",
+                    "options": [
+                        "Only Influenza and Pneumococcus vaccines are routinely recommended.",
+                        "RSV and SARS-CoV-2 vaccinations are contraindicated during exacerbations.",
+                        "A comprehensive panel including Influenza, Pneumococcus, Pertussis, SARS-CoV-2, and RSV is strongly encouraged.",
+                        "Pertussis vaccination is only required for pediatric asthma patients."
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Management of asthma includes proactive prevention of respiratory infections through a full battery of vaccines including Influenza, Pneumococcus, Pertussis, SARS-CoV-2, and RSV."
+                },
+                {
+                    "character": "Student 19-64 getting a second New-Mocker shield",
+                    "question": "A 35-year-old patient with moderate persistent asthma is reviewing their immunization record. Which statement regarding their pneumococcal vaccination schedule is accurate?",
+                    "options": [
+                        "They should follow the same schedule as a healthy 20-year-old.",
+                        "Adults aged 19-64 with asthma require an additional pneumococcal vaccination compared to healthy peers.",
+                        "Pneumococcal vaccines are only indicated for asthma patients after age 65.",
+                        "The second dose should only be given if the patient is on chronic oral steroids."
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Adults aged 19-64 with asthma are considered at higher risk and require an additional pneumococcal vaccination to ensure adequate protection against streptococcus pneumoniae."
+                },
+                {
+                    "character": "Pax-Lover chocolate vs. Salmon-Meter & Villain-Trolley",
+                    "question": "A patient with asthma is prescribed Nirmatrelvir/ritonavir (Paxlovid) for a COVID-19 infection. What adjustment must be made to their respiratory regimen?",
+                    "options": [
+                        "Increase the dose of salmeterol to counteract viral load.",
+                        "Switch from a LABA to a SABA-only rescue plan temporarily.",
+                        "Hold long-acting beta-agonists (LABAs) like salmeterol and vilanterol during treatment.",
+                        "Paxlovid has no significant interactions with common asthma medications."
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Paxlovid interacts with LABAs such as salmeterol and vilanterol due to CYP3A4 inhibition by ritonavir; therefore, these LABAs must be held during Paxlovid therapy to avoid toxicity."
+                },
+                {
+                    "character": "Zana-Vampire with No-Breathing sign",
+                    "question": "Which neuraminidase inhibitor is specifically avoided in the treatment of influenza for patients with a history of asthma?",
+                    "options": [
+                        "Oseltamivir",
+                        "Zanamivir",
+                        "Peramivir",
+                        "Baloxavir"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Zanamivir is an inhaled powder that is contraindicated in patients with underlying airway disease like asthma due to the high risk of inducing severe bronchospasm."
+                },
+                {
+                    "character": "20-Pounds of Prednisone-Pizza",
+                    "question": "At what daily dose of Prednisone should a clinician switch an asthma patient to an 'immunocompromised' vaccination schedule?",
+                    "options": [
+                        "5 mg daily",
+                        "10 mg daily",
+                        "20 mg daily",
+                        "50 mg daily"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Prednisone doses of 20 mg or more daily are considered sufficiently immunosuppressive to warrant the use of immunocompromised-specific vaccine schedules."
+                },
+                {
+                    "character": "Fading Bio-Logic puzzle",
+                    "question": "What is the clinical significance of administering vaccines to patients currently managed on biologic therapies for severe asthma?",
+                    "options": [
+                        "Biologics cause a complete failure of the primary immune response.",
+                        "Live vaccines are the only ones that show reduced efficacy.",
+                        "Antibody levels might be slightly reduced, but the clinical significance remains unclear.",
+                        "Biologics actually enhance the antibody response to the SARS-CoV-2 vaccine."
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "While there is data suggesting biologics might slightly reduce the level of antibodies produced post-vaccination, it is currently unknown if this reduction is clinically significant in terms of infection risk."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 8: Initial Assessment and Severity Classification",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Initial Asthma Severity Assessment",
+            "facts": [
+                "Assessment Trio: Symptoms, lung function, and exacerbation risk.",
+                "Spirometry is required for initial evaluation in all capable patients.",
+                "Four Severity Levels: Intermittent, mild persistent, moderate persistent, and severe persistent.",
+                "Mild Asthma: Minimal symptoms and risk; GINA suggests avoiding the term to prevent complacency.",
+                "Moderate Asthma: Controlled with medium-dose ICS or low-medium ICS plus controllers.",
+                "Severe Asthma: Requires high-dose ICS plus controllers or remains uncontrolled.",
+                "Timing: True severity is only confirmed after achieving control and finding the minimum effective dose."
+            ],
+            "story": "Professor Ash-Ma stands in front of her high-tech 'Assessment Trio' kiosk, which looks like a three-headed slot machine labeled 'Symptoms', 'Lung Lungs', and 'Danger Dice'. To start the game, a giant 'Spyro-Meter' (a dragon-shaped wind gauge) must be blown into by every student. On the game board, four stairs represent the levels. A tiny 'Mild-Mew' kitten sits on the first step, but the Professor covers its name with a 'No Complacency' sticker. A 'Moderate-Moose' stands on the middle step, balancing two 'Medium-Ice-Cream-Sandwiches' (ICS). At the very top, a 'Severe-Sovereign' king in heavy armor holds massive high-dose sandwiches and still looks stressed! Finally, the Professor points to a 'Step-Down' ladder, explaining you only know the real score once you climb back down to find the smallest snack that works.",
+            "associations": [
+                {
+                    "character": "Assessment Trio Kiosk",
+                    "medicalTerm": "Symptoms, lung function, and exacerbation risk",
+                    "explanation": "The three pillars used to determine asthma intensity at diagnosis."
+                },
+                {
+                    "character": "Spyro-Meter Dragon",
+                    "medicalTerm": "Spirometry",
+                    "explanation": "Essential lung function testing required for initial evaluation."
+                },
+                {
+                    "character": "No-Complacency Sticker",
+                    "medicalTerm": "GINA Mild Asthma Warning",
+                    "explanation": "The recommendation to avoid the term 'mild' so patients don't underestimate risk."
+                },
+                {
+                    "character": "Moderate-Moose with Medium-Ice-Cream-Sandwiches",
+                    "medicalTerm": "Moderate Persistent Asthma",
+                    "explanation": "Asthma controlled with medium-dose Inhaled Corticosteroids (ICS)."
+                },
+                {
+                    "character": "Severe-Sovereign King",
+                    "medicalTerm": "Severe Persistent Asthma",
+                    "explanation": "Requires high-dose ICS plus controllers or remains uncontrolled despite treatment."
+                },
+                {
+                    "character": "Step-Down Ladder",
+                    "medicalTerm": "Minimum Effective Dose",
+                    "explanation": "Severity is accurately assessed only after stepping down therapy to find the lowest effective level."
+                }
+            ],
+            "visualPrompt": "Professional Educator theme: A hyper-vibrant 3D Chibi-style Professor with huge glasses and a white lab coat standing in a futuristic classroom. To her left, a large dragon-shaped 'Spyro-Meter' wind machine. In the center, a four-tiered staircase featuring a moose balancing ice cream sandwiches and a stressed king in armor. Cinematic lighting, Pixar-style expressive faces, glowing holographic icons representing 'Symptoms' and 'Exacerbation Risk' floating in the air. High-contrast colors and soft rounded textures."
+        },
+        "visual_prompt": "thought)Here is a highly detailed visual prompt based on your story, tailored for an image generator with a \"Professional Educator\" theme.\n\n### Visual Prompt\n\n**Style:** High-end educational illustration, clean and professional aesthetic, reminiscent of a modern medical textbook or a sophisticated STEM classroom poster. Vibrant but balanced colors, sharp focus, and clear architectural lines.\n\n**Setting:** A futuristic, high-tech classroom led by **Professor Ash-Ma**, a poised and professional educator in a sleek, white lab coat. She is gesturing with a digital pointer toward a massive, polished \"Assessment Trio\" kiosk.\n\n**The Kiosk:** A centerpiece machine with three distinct sections labeled in clear, professional typography: \"Symptoms,\" \"Lung Function,\" and \"Exacerbation Risk.\" It features holographic displays showing glowing medical charts and data visualizations.\n\n**The Characters & Elements:**\n*   **The Spyro-Meter:** To the side stands a large, stylized dragon-shaped wind gauge (the Spyro-Meter). Its wings act as a dial, and its scales are polished chrome. A student is professionally performing spirometry into it.\n*   **The Four-Step Staircase:** In the center of the room is a tiered platform representing the levels of asthma severity.\n    *   **The First Step (Mild):** A small, soft-looking kitten (Mild-Mew) sits here. Professor Ash-Ma has placed a bright, red \"NO COMPLACENCY\" warning sticker directly over its nameplate, making the warning the visual focus.\n    *   **The Middle Step (Moderate):** A sturdy, calm moose (Moderate-Moose) stands here. It is expertly balancing two large, rectangular ice cream sandwiches—labeled \"Medium ICS\"—on its antlers like a tray.\n    *   **The Top Step (Severe):** A \"Severe-Sovereign\" king in heavy, ornate gold armor. He is holding massive, oversized \"High-Dose\" ice cream sandwiches. Despite his power, his facial expression is visibly strained and stressed, surrounded by glowing red \"Danger Dice\" symbols.\n*   **The Step-Down Ladder:** Leaning against the high platform is a sleek, silver \"Step-Down\" ladder. Professor Ash-Ma is pointing to the bottom of the ladder, where a small, single \"Minimal Dose\" snack sits, illustrating the goal of finding the lowest effective treatment.\n\n**Atmosphere & Lighting:** Bright, clinical, and encouraging. The lighting is crisp and even, highlighting the textures of the armor, the fur of the animals, and the digital glow of the kiosk. The composition is organized and instructional, clearly conveying the hierarchy of the \"Assessment Trio\" and the progression of the steps.\n\n**Theme Integration (Professional Educator):** The Professor is portrayed with an air of expertise and authority. The entire scene is framed as a high-level medical seminar, using the whimsical characters as sophisticated mnemonic tools rather than a childish cartoon. Text on the kiosk and stickers is legible and uses professional medical fonts.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Assessment Trio Kiosk",
+                    "question": "According to the 'Assessment Trio', which three factors must be evaluated to determine a patient's initial asthma severity?",
+                    "options": [
+                        "Eosinophil count, IgE levels, and sputum cytology",
+                        "Symptoms, lung function, and risk of exacerbations",
+                        "Exercise tolerance, pulse oximetry, and chest X-ray",
+                        "History of atopy, family history, and skin prick testing"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "The assessment of asthma severity is multidimensional, focusing on current impairment (symptoms and lung function) and future risk (exacerbations)."
+                },
+                {
+                    "character": "Spyro-Meter Dragon",
+                    "question": "At what stage of the asthma management cycle should objective lung function measurements be obtained for a patient capable of performing the maneuver?",
+                    "options": [
+                        "Only during an acute exacerbation to assess severity",
+                        "Prior to beginning any pharmacologic therapy",
+                        "During the initial evaluation for diagnosis and severity assessment",
+                        "Only after 3 months of controller therapy to assess response"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Spirometry is required for the initial evaluation of all patients capable of the maneuver to objectively assess lung function and confirm the diagnosis."
+                },
+                {
+                    "character": "No-Complacency Sticker",
+                    "question": "Why does the Global Initiative for Asthma (GINA) suggest clinicians avoid using the term 'mild asthma' when communicating with patients?",
+                    "options": [
+                        "Because mild asthma does not require treatment with inhaled corticosteroids",
+                        "To prevent patient and provider complacency that may lead to severe exacerbations",
+                        "Because the term is reserved specifically for pediatric populations",
+                        "To ensure that patients are transitioned to oral corticosteroids sooner"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "GINA cautions against the term 'mild' because patients with infrequent symptoms can still suffer life-threatening exacerbations, and the label may lead to poor adherence."
+                },
+                {
+                    "character": "Moderate-Moose with Medium-Ice-Cream-Sandwiches",
+                    "question": "A patient's asthma is considered 'moderate' if it is well-controlled at which specific treatment intensity?",
+                    "options": [
+                        "Low-dose Inhaled Corticosteroids (ICS) as needed only",
+                        "Medium-dose ICS or low-to-medium dose ICS plus a second controller",
+                        "High-dose ICS plus a long-acting beta agonist and a biologic",
+                        "Short-acting beta agonists used more than twice weekly"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Moderate asthma is defined by the level of treatment required to maintain control, specifically medium-dose ICS or combination therapy at low-to-medium doses."
+                },
+                {
+                    "character": "Severe-Sovereign King",
+                    "question": "Which clinical scenario best defines 'Severe Persistent Asthma' according to current classification standards?",
+                    "options": [
+                        "Asthma that is controlled with low-dose ICS and as-needed SABA",
+                        "Asthma that remains uncontrolled despite high-dose ICS-LABA or requires high-dose therapy to remain controlled",
+                        "Asthma that presents with symptoms less than twice a month",
+                        "Asthma that is characterized by a FEV1 > 80% predicted before treatment"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Severe asthma is characterized by the need for high-intensity treatment (Step 4 or 5) or asthma that remains uncontrolled despite such therapy."
+                },
+                {
+                    "character": "Step-Down Ladder",
+                    "question": "When is the most accurate assessment of a patient's 'true' asthma severity confirmed?",
+                    "options": [
+                        "During the first visit before any medications are prescribed",
+                        "Immediately following the first successful use of a rescue inhaler",
+                        "Only after achieving control and identifying the minimum effective dose of medication",
+                        "During a peak flow measurement taken during an acute attack"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "True asthma severity is a retrospective assessment based on the minimum level of treatment required to maintain control after the patient has been stabilized."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 9: Initiating Pharmacologic Treatment",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Asthma Management Stepwise Approach",
+            "facts": [
+                "Stepwise approach involves adjusting therapy based on symptoms and lung function",
+                "All patients must have immediate access to a rapid-onset reliever",
+                "Traditional reliever is a SABA like albuterol",
+                "Preferred reliever is Anti-inflammatory Reliever (AIR) like low-dose ICS-formoterol",
+                "AIR reduces exacerbation rates better than SABA alone",
+                "ICS are the primary controller medications",
+                "LABAs and LTRAs are used as adjunct controllers"
+            ],
+            "story": "Professor Step-Up is teaching a class on a giant staircase where the students are racing up and down based on how hard they are breathing! At every level, the students carry a 'S.O.S. Bell' (Reliever) they can ring at any time. Some students have a 'Salty-Butter-Owl' (SABA/Albuterol) for quick relief, but the teacher prefers they use the 'Ice-Cream-Soda-Former-Troll' (ICS-Formoterol) because it stops fire-breathing dragons (exacerbations) much better. To stay steady on the stairs, the students wear 'Ice-Cream-Suits' (ICS) as their main controllers. If they get tired, they call for 'Laba-the-Llama' (LABA) or a 'Luke-Tri-Ant-Goner' (LTRA) to help them climb!",
+            "associations": [
+                {
+                    "character": "Professor Step-Up on the Giant Staircase",
+                    "medicalTerm": "Stepwise Approach",
+                    "explanation": "Therapy is escalated or de-escalated in steps based on asthma severity."
+                },
+                {
+                    "character": "S.O.S. Bell",
+                    "medicalTerm": "Reliever Access",
+                    "explanation": "Every asthma patient needs immediate access to rescue medication."
+                },
+                {
+                    "character": "Salty-Butter-Owl",
+                    "medicalTerm": "SABA (Albuterol)",
+                    "explanation": "The traditional short-acting beta-agonist used as a rescue inhaler."
+                },
+                {
+                    "character": "Ice-Cream-Soda-Former-Troll",
+                    "medicalTerm": "ICS-Formoterol (AIR)",
+                    "explanation": "The preferred Anti-inflammatory Reliever that reduces exacerbations."
+                },
+                {
+                    "character": "Ice-Cream-Suit",
+                    "medicalTerm": "Inhaled Corticosteroids (ICS)",
+                    "explanation": "The primary daily controller medication for asthma management."
+                },
+                {
+                    "character": "Laba-the-Llama",
+                    "medicalTerm": "LABA",
+                    "explanation": "Long-acting beta-agonists used as adjunct controllers alongside ICS."
+                },
+                {
+                    "character": "Luke-Tri-Ant-Goner",
+                    "medicalTerm": "Leukotriene Receptor Antagonist (LTRA)",
+                    "explanation": "An alternative or adjunct oral controller medication."
+                }
+            ],
+            "visualPrompt": "A professional educator with a floating chalkboard standing on a massive rainbow staircase in a vibrant 3D Chibi Pixar style. One student is holding a salty owl made of butter (SABA), while the professor points to a small troll holding an ice cream soda (ICS-Formoterol). Another student is wearing a suit made of melting vanilla ice cream (ICS) while riding a llama (LABA). The colors are hyper-saturated and cinematic with exaggerated expressions and soft studio lighting."
+        },
+        "visual_prompt": "**Visual Prompt: The Professor’s Stepwise Ascent**\n\n**Theme:** Professional Educator\n**Style:** A high-end, cinematic educational illustration with the polished look of a premium medical textbook combined with the whimsical storytelling of a high-fantasy academic lecture. The lighting is bright and scholarly, emphasizing clarity and instructional detail.\n\n**Image Description:**\nIn a vast, sun-drenched ivory lecture hall that opens into a boundless sky, **Professor Step-Up**—a distinguished academic with a neatly trimmed silver beard, wearing a formal navy tweed blazer with leather elbow patches and a graduation cap—stands authoritatively on a landing of a **Giant Stone Staircase**. The staircase is massive, with clearly defined levels labeled \"Step 1\" through \"Step 5\" carved into the risers, spiraling upward to represent the **Stepwise Approach**.\n\nThe Professor holds a long wooden pointer, gesturing toward a group of diverse students who are actively climbing the stairs. All students are dressed in **\"Ice-Cream-Suits\" (ICS)**: sleek, form-fitting protective gear that has a subtle ivory-white sheen and a faint waffle-cone texture, symbolizing their primary daily protection. \n\nHanging from each student's belt is a gleaming golden **\"S.O.S. Bell\" (Reliever)**. In the foreground, one student holds a **\"Salty-Butter-Owl\" (SABA)**—a small, feathered owl with yellow butter-like plumage—but the Professor is pointing approvingly toward another student accompanied by the **\"Ice-Cream-Soda-Former-Troll\" (ICS-Formoterol)**. This troll is a friendly, translucent blue creature made of bubbling soda and scoops of vanilla cream; it holds a frosty staff that is actively freezing a **Small Fire-Breathing Dragon (Exacerbation)** that is trying to puff smoke from the shadows of the steps.\n\nTo the side of the higher steps, a tall, majestic **\"Laba-the-Llama\" (LABA)** with a silk harness walks alongside a tired student, offering a steadying wooly back to lean on. Nearby, a tiny, armored ant-warrior, the **\"Luke-Tri-Ant-Goner\" (LTRA)**, stands guard with a microscopic shield.\n\n**Compositional Details:**\n*   **Perspective:** A wide-angle, slightly low-perspective shot looking up the staircase to emphasize the \"Step-Up\" progression.\n*   **Lighting:** Crisp, \"Golden Hour\" academic lighting streaming through tall library windows, creating a clean, professional atmosphere.\n*   **Color Palette:** Professional blues, teals, and creams contrasted with the vibrant red of the small dragons and the warm gold of the S.O.S. Bells.\n*   **Clarity:** Sharp focus on the Professor and the \"Ice-Cream-Soda-Former-Troll\" to highlight the preferred medical path. The background features blurred chalkboard equations of lung volumes, grounding the fantasy in medical science.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Professor Step-Up on the Giant Staircase",
+                    "question": "When utilizing the management strategy associated with Professor Step-Up, what is the primary indicator for escalating a patient from Step 2 to Step 3 therapy?",
+                    "options": [
+                        "A decrease in the patient's age",
+                        "Persistent symptoms or exacerbations despite adherence to Step 2 controller therapy",
+                        "Successful control of symptoms for at least three months",
+                        "A transition from an ICS-formoterol to a SABA-only reliever"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "The stepwise approach involves increasing (stepping up) treatment intensity when symptoms remain poorly controlled or exacerbations occur despite current therapy levels."
+                },
+                {
+                    "character": "S.O.S. Bell",
+                    "question": "According to current asthma guidelines symbolized by the S.O.S. Bell, which of the following is mandatory for all patients regardless of their disease severity step?",
+                    "options": [
+                        "Daily use of oral corticosteroids",
+                        "Immediate access to a rapid-onset reliever medication",
+                        "Weekly pulmonary function testing",
+                        "Avoidance of all physical activity"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "All asthma patients must have immediate access to a reliever medication for the prompt relief of breakthrough bronchoconstriction."
+                },
+                {
+                    "character": "Salty-Butter-Owl",
+                    "question": "What is the primary mechanism of action for the class of rescue medication represented by the Salty-Butter-Owl (SABA)?",
+                    "options": [
+                        "Inhibition of leukotriene receptors",
+                        "Reduction of airway inflammation via gene transcription",
+                        "Rapid stimulation of beta-2 adrenergic receptors on airway smooth muscle",
+                        "Antagonism of muscarinic M3 receptors"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "SABAs like albuterol act as short-acting beta-2 agonists, causing rapid bronchodilation by relaxing airway smooth muscle."
+                },
+                {
+                    "character": "Ice-Cream-Soda-Former-Troll",
+                    "question": "Why is the medication represented by the Ice-Cream-Soda-Former-Troll (ICS-formoterol) currently preferred over SABA alone for symptom relief?",
+                    "options": [
+                        "It carries no risk of side effects",
+                        "It provides immediate anti-inflammatory therapy during a flare, reducing exacerbation risk",
+                        "It is only effective in patients with nocturnal asthma",
+                        "It has a slower onset of action than albuterol, allowing the body to adjust"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Low-dose ICS-formoterol is preferred as an Anti-inflammatory Reliever (AIR) because it treats the underlying inflammation simultaneously with bronchoconstriction, significantly reducing the risk of severe exacerbations."
+                },
+                {
+                    "character": "Ice-Cream-Suit",
+                    "question": "What is the physiological role of the 'controller' medication class represented by the Ice-Cream-Suit in chronic asthma management?",
+                    "options": [
+                        "Occasional bronchodilation during exercise",
+                        "Suppression of airway inflammation and reduction of bronchial hyperresponsiveness",
+                        "Immediate reversal of anaphylaxis",
+                        "Blocking the production of IgE antibodies"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Inhaled Corticosteroids (ICS) are the foundation of asthma control, acting to reduce airway inflammation and prevent long-term airway remodeling."
+                },
+                {
+                    "character": "Laba-the-Llama",
+                    "question": "In the stepwise approach, how should the medication represented by Laba-the-Llama (LABA) be administered to asthma patients?",
+                    "options": [
+                        "As a monotherapy for acute bronchospasm",
+                        "Only in combination with an Inhaled Corticosteroid (ICS)",
+                        "As a replacement for all rescue inhalers",
+                        "Exclusively via nebulizer in the emergency department"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "In asthma, LABAs should never be used as monotherapy due to increased risk of asthma-related death; they must always be used in combination with an ICS."
+                },
+                {
+                    "character": "Luke-Tri-Ant-Goner",
+                    "question": "The medication class represented by Luke-Tri-Ant-Goner is particularly useful as an adjunct controller in which specific clinical phenotype?",
+                    "options": [
+                        "Acute viral pneumonia",
+                        "Aspirin-sensitive asthma or patients with concurrent allergic rhinitis",
+                        "Severe status asthmaticus requiring intubation",
+                        "Asthma caused by Alpha-1 antitrypsin deficiency"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Leukotriene Receptor Antagonists (LTRAs) are effective adjuncts, particularly for patients with aspirin-exacerbated respiratory disease (AERD) or those with allergic rhinitis."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 10: Follow-up Monitoring and Assessing Control",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Routine Asthma Follow-up",
+            "facts": [
+                "Follow-up frequency: every 1 to 6 months based on control.",
+                "Assessment window: symptoms reviewed over the prior 4 weeks.",
+                "Daytime symptoms goal: less than 2 days per week.",
+                "Nighttime symptoms goal: less than 1 awakening per month.",
+                "Reliever (SABA) use goal: less than 2 days per week.",
+                "Validated tools: Asthma Control Test (ACT) for adults and children.",
+                "Objective testing: Spirometry should be performed at least yearly."
+            ],
+            "story": "Welcome to Professor Puff’s 'Breathe-Easy' Academy! The Professor stands at his high-tech desk, waving a magical Wand (1) and holding a Six-pack (6) of soda to remind you to visit every 1-6 months. He peers through a giant Four-leaf Clover window to look back at the last 4 weeks. In the sky, a Chibi Sun is sad because he only has One Shoe (less than 2 days) to walk in, and a sleepy Moon holds a Single Tiny Match (less than 1 awakening). A student nearby tries to swing a glowing Star-Saber (SABA) but also only has One Shoe (less than 2 days). Before leaving, everyone must put on a giant theater Actor Mask (ACT) and look through a high-tech Spy-Glass (Spirometry) that only pops out once a year!",
+            "associations": [
+                {
+                    "character": "Wand and Six-pack",
+                    "medicalTerm": "1 to 6 Month Follow-up",
+                    "explanation": "Routine visits should occur every 1 to 6 months depending on the severity and control of the asthma."
+                },
+                {
+                    "character": "Four-leaf Clover Window",
+                    "medicalTerm": "4-Week Assessment Window",
+                    "explanation": "Clinicians assess asthma control by looking back at the patient's symptoms over the preceding four weeks."
+                },
+                {
+                    "character": "Sun with One Shoe",
+                    "medicalTerm": "Daytime Symptoms < 2 Days/Week",
+                    "explanation": "Controlled asthma is defined by having daytime symptoms on fewer than two days per week."
+                },
+                {
+                    "character": "Moon with Single Match",
+                    "medicalTerm": "Nocturnal Awakenings < 1/Month",
+                    "explanation": "The goal for nighttime control is fewer than one awakening due to asthma symptoms per month."
+                },
+                {
+                    "character": "Star-Saber with One Shoe",
+                    "medicalTerm": "SABA Use < 2 Days/Week",
+                    "explanation": "The use of short-acting beta-agonists for symptom relief should be restricted to less than two days per week."
+                },
+                {
+                    "character": "Actor Mask",
+                    "medicalTerm": "Asthma Control Test (ACT)",
+                    "explanation": "Validated tools like the ACT are used to objectively measure how well the patient's asthma is managed."
+                },
+                {
+                    "character": "High-tech Spy-Glass",
+                    "medicalTerm": "Yearly Spirometry",
+                    "explanation": "Spirometry should be performed at least annually to monitor lung function and ensure stability."
+                }
+            ],
+            "visualPrompt": "A hyper-vibrant 3D Pixar-style scene featuring Professor Puff, a Chibi-style educator with oversized glasses and a lab coat, standing in a futuristic classroom. He holds a glowing magic wand and a six-pack of soda. Behind him is a large window shaped like a four-leaf clover showing a stylized 4-week calendar. Outside the window, a smiling sun wears a single sneaker, and a crescent moon holds one tiny candle. A student character in the corner is holding a glowing blue light-saber while wearing one shoe. On the desk sits a large theatrical drama mask and a futuristic telescope. The lighting is cinematic with bright blues, oranges, and purples, and the characters have exaggerated, joyful expressions."
+        },
+        "visual_prompt": "Here is a detailed visual prompt based on the \"Breathe-Easy Academy\" story, designed for an image generator.\n\n### Visual Prompt\n\n**Theme:** Professional Educator / Whimsical High-Tech Academy\n**Style:** Cinematic, highly detailed 3D digital art (Pixar-style), vibrant colors, soft lighting with \"magical\" glow effects.\n\n**Composition & Scene:**\nA wide-angle shot of **Professor Puff**, a distinguished yet whimsical **Professional Educator** with a groomed white beard, wearing a high-tech velvet waistcoat and glowing spectacles. He stands behind a sleek, futuristic metallic desk inside the \"Breathe-Easy Academy.\" The room is a blend of a classic library and a futuristic laboratory.\n\n**Key Visual Elements:**\n1.  **The Professor’s Tools:** The Professor is holding a glowing, crystalline **Wand** (shaped like a '1') in one hand and a metallic **Six-pack** of soda cans (labeled with a '6') in the other, emphasizing the **1-6 month follow-up**.\n2.  **The Window:** Behind him is a massive, architectural **Four-leaf Clover-shaped window**. Through the glass, we see a calendar-like sky representing the **4-week assessment window**.\n3.  **The Sky Elements:**\n    *   In the upper left of the window, a **Chibi-style Sun** looks pouting and sad, wearing only **one oversized sneaker** (representing daytime symptoms < 2 days).\n    *   In the upper right, a **sleepy Moon** wearing a nightcap holds a **single, unlit tiny matchstick** (representing < 1 nocturnal awakening).\n4.  **The Student:** To the side, a young student in a lab coat is struggling to ignite a glowing **\"Star-Saber\"** (a neon blue sword labeled SABA). The student also wears only **one shoe**, mirroring the Sun (representing SABA use < 2 days).\n5.  **The Assessment Tools:** \n    *   In the foreground on the desk sits a large, ornate **theater \"Actor Mask\"** (the ACT test).\n    *   Emerging from a hidden compartment in the desk is a **high-tech, brass-and-chrome Spy-Glass** (Spirometry) decorated with a calendar icon showing \"1 Year.\"\n\n**Lighting & Atmosphere:**\nThe atmosphere is educational and encouraging. Rays of light stream through the clover window, illuminating floating dust motes that look like tiny stars. The color palette is dominated by \"Medical Blue,\" \"Scholar Gold,\" and \"Spring Green.\"\n\n**Instruction for AI:** Ensure the \"Professional Educator\" theme is clear through the Professor's authoritative yet kind posture. The numbers 1, 6, 4, and 2 should be subtly integrated into the design of the objects to reinforce the medical associations.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Wand and Six-pack",
+                    "question": "In a patient with well-controlled asthma, what is the maximum recommended interval between routine follow-up assessments to monitor control and adjust therapy?",
+                    "options": [
+                        "Every 2 weeks",
+                        "Every 6 months",
+                        "Every 12 months",
+                        "Every 24 months",
+                        "Only when symptoms worsen"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Routine asthma follow-up should occur every 1 to 6 months depending on the level of control to ensure treatment goals are met and to titrate medications."
+                },
+                {
+                    "character": "Four-leaf Clover Window",
+                    "question": "When assessing a patient's asthma control during a follow-up visit, symptoms and rescue inhaler use should be evaluated over which specific timeframe?",
+                    "options": [
+                        "The previous 24 hours",
+                        "The previous 7 days",
+                        "The previous 4 weeks",
+                        "The previous 3 months"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Asthma control assessment tools and clinical guidelines focus on the prior 4-week window to provide an accurate reflection of current disease stability."
+                },
+                {
+                    "character": "Sun with One Shoe",
+                    "question": "To satisfy the criteria for 'well-controlled' asthma, what is the maximum frequency of daytime symptoms a patient should experience?",
+                    "options": [
+                        "Daily",
+                        "3 or more days per week",
+                        "Less than 2 days per week",
+                        "Only during exercise"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Well-controlled asthma is defined by daytime symptoms occurring less than 2 days per week."
+                },
+                {
+                    "character": "Moon with Single Match",
+                    "question": "A patient reports being woken up by a cough twice in the last month. According to GINA guidelines, this frequency of nocturnal awakenings suggests which status?",
+                    "options": [
+                        "Well-controlled",
+                        "Partly controlled",
+                        "Uncontrolled",
+                        "Emergency department referral required"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "The goal for well-controlled asthma is less than 1 nighttime awakening per month. Any awakening (even once or twice) moves the patient into the partly controlled category."
+                },
+                {
+                    "character": "Star-Saber with One Shoe",
+                    "question": "Which of the following use patterns of a Short-Acting Beta-Agonist (SABA) reliever is consistent with the goal for well-controlled asthma?",
+                    "options": [
+                        "Using the SABA daily",
+                        "Using the SABA 4 days per week",
+                        "Using the SABA less than 2 days per week",
+                        "Using the SABA only before every sleep cycle"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "The goal for well-controlled asthma is using a SABA reliever less than 2 days per week. Frequent use indicates the need for increasing controller therapy."
+                },
+                {
+                    "character": "Actor Mask",
+                    "question": "A 25-year-old patient is being screened for asthma control. Which validated clinical tool would be most appropriate to provide a standardized score for their condition?",
+                    "options": [
+                        "Mini-Mental State Examination (MMSE)",
+                        "Asthma Control Test (ACT)",
+                        "The PHQ-9 Questionnaire",
+                        "The NYHA Functional Classification"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "The Asthma Control Test (ACT) is a validated tool for adults and children used to assess the level of asthma control through a standardized score."
+                },
+                {
+                    "character": "High-tech Spy-Glass",
+                    "question": "Regardless of symptom control, what is the minimum frequency for performing objective lung function testing (spirometry) in an asthma patient?",
+                    "options": [
+                        "Every 5 years",
+                        "At least yearly",
+                        "Only at the time of diagnosis",
+                        "Monthly"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Spirometry should be performed at the time of diagnosis, after treatment initiation/stabilization, and at least yearly thereafter to monitor for airway remodeling or decline."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 11: Specialist Referral Criteria",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Asthma Referral Criteria",
+            "facts": [
+                "Diagnostic uncertainty or questioning previous diagnosis",
+                "Life-threatening events (ICU, intubation, hypoxic seizure)",
+                "Two or more courses of oral glucocorticoids per year",
+                "Severity threshold: Step 4 (children) or Step 5 (adults)",
+                "Persistence of poor control after several months of therapy",
+                "Complicated comorbidities (AERD, ABPA, Vocal Cord Dysfunction)",
+                "Candidacy for biologics or bronchial thermoplasty"
+            ],
+            "story": "Meet Professor Pulmo, the world's most stressed-out educator! He's teaching a class on 'When to Call the Pros.' First, he points to a giant 'Question Mark' hat he’s wearing because he’s 'Diagnostically Uncertain' if his shoes are actually fish. Suddenly, a 'Life-Saving Lifeguard' bursts through the door, reminding him of that time he was 'Intubated' by a giant straw. In his hand, he’s juggling 'Two Glue-Cans' (Glucocorticoids) because he can't stop using them twice a year! He then tries to climb a 'Step Ladder' with 5 rungs for adults and 4 for kids, but he's stuck in 'Persistent' molasses for months. A 'Comorbid-Cobra' with vocal cords for a neck slithers by, and finally, he pulls out a 'Bio-Logic' puzzle and a 'Thermo-Plaster' cast to show he’s ready for the big leagues!",
+            "associations": [
+                {
+                    "character": "Question Mark Hat",
+                    "medicalTerm": "Diagnostic Uncertainty",
+                    "explanation": "Difficulty confirming diagnosis or questioning previous diagnosis."
+                },
+                {
+                    "character": "Life-Saving Lifeguard",
+                    "medicalTerm": "Life-Threatening Events",
+                    "explanation": "History of ICU admission, intubation, or hypoxic seizures."
+                },
+                {
+                    "character": "Two Glue-Cans",
+                    "medicalTerm": "Oral Glucocorticoids",
+                    "explanation": "Two or more courses of oral steroids per year or inability to discontinue them."
+                },
+                {
+                    "character": "Step Ladder (4/5 rungs)",
+                    "medicalTerm": "Severity Threshold",
+                    "explanation": "Need for Step 4 therapy in children or Step 5 in adults."
+                },
+                {
+                    "character": "Persistent Molasses",
+                    "medicalTerm": "Poor Control Persistence",
+                    "explanation": "Inadequate control after several months of active therapy."
+                },
+                {
+                    "character": "Comorbid-Cobra",
+                    "medicalTerm": "Comorbidities",
+                    "explanation": "Presence of AERD, ABPA, or vocal cord dysfunction."
+                },
+                {
+                    "character": "Bio-Logic Puzzle & Thermo-Plaster",
+                    "medicalTerm": "Biologics and Thermoplasty",
+                    "explanation": "Consideration for biologic therapy or bronchial thermoplasty."
+                }
+            ],
+            "visualPrompt": "A hyper-vibrant 3D Chibi Pixar-style scene featuring Professor Pulmo, a tiny educator with a huge head and glasses. He is standing in a whimsical classroom. He wears a giant neon question mark hat. Beside him, a lifeguard character holds a mechanical ventilator straw. The professor is juggling two glowing glue containers. In the background, a large 'Step Ladder' stands next to a clock covered in molasses. A cartoon cobra with a human throat (vocal cords) watches from a shelf. The scene is cinematic with glowing particles, bright primary colors, and dramatic studio lighting."
+        },
+        "visual_prompt": "Here is a highly detailed visual prompt based on the story of Professor Pulmo, designed for an image generator:\n\n**Prompt:**\n\n> **Style:** Cinematic 3D digital illustration with a \"Professional Educator\" theme. The aesthetic is a blend of whimsical surrealism and a vibrant, high-end educational animation style (similar to Pixar or Dreamworks).\n>\n> **Scene Setting:** A chaotic yet organized university lecture hall. At the center is **Professor Pulmo**, a frantic, wide-eyed academic in a tweed blazer with elbow patches and a disheveled bow tie. \n>\n> **Character Details & Layout:**\n> 1. **Diagnostic Uncertainty:** Professor Pulmo is wearing a giant, oversized velvet **Question Mark Hat** that glows slightly. He is looking down at his feet in confusion, where his shoes have transformed into hyper-realistic **shimmering fish**.\n> 2. **Life-Threatening Events:** A heroic **Lifeguard** in a bright red uniform, carrying a rescue buoy, is bursting through the oak classroom doors. In the background, a chalkboard drawing depicts the Professor being comically **intubated by a giant, bendy striped drinking straw**.\n> 3. **Oral Glucocorticoids:** On the Professor's lectern, he is frantically juggling **two large industrial glue cans** labeled \"GLUE-CORTICOID\" in bold letters.\n> 4. **Severity & Persistence:** To the left, a giant wooden **Step-Ladder** stands with precisely 5 rungs on the top half (labeled 'Adults') and 4 rungs on the bottom (labeled 'Kids'). The Professor's legs are stuck knee-deep in a thick, amber-colored pool of **Persistent Molasses** overflowing from the ladder's base.\n> 5. **Comorbidities:** Slithering across the floor is the **Comorbid-Cobra**, a snake whose neck is uniquely shaped like anatomical **human vocal cords**. \n> 6. **Biologics/Thermoplasty:** In his outstretched hand, the Professor holds a glowing, translucent **\"Bio-Logic\" Jigsaw Puzzle** and a heavy, industrial-grade **\"Thermo-Plaster\" Cast** shaped like a set of lungs.\n>\n> **Lighting & Atmosphere:** Bright, academic lighting with dust motes dancing in sunbeams. The chalkboard in the background is covered in complex lung diagrams and the words \"ASTHMA REFERRAL CRITERIA.\" The color palette is rich with educational blues, \"caution\" yellows, and \"emergency\" reds. High resolution, 8k, extremely detailed textures.",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Question Mark Hat",
+                    "question": "A patient presenting with persistent wheezing fails to respond to inhaled corticosteroids, and the physician begins to doubt the initial asthma diagnosis. According to referral guidelines, what is the most appropriate next step?",
+                    "options": [
+                        "Increase the dose of inhaled corticosteroids",
+                        "Refer to a specialist for diagnostic clarification",
+                        "Perform a chest X-ray and continue current therapy",
+                        "Add a long-acting beta-agonist without further investigation"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Diagnostic uncertainty or questioning a previous asthma diagnosis is a primary criterion for referral to an asthma specialist."
+                },
+                {
+                    "character": "Life-Saving Lifeguard",
+                    "question": "Following an episode of status asthmaticus requiring mechanical ventilation in the intensive care unit, what should be prioritized in the patient's long-term management plan?",
+                    "options": [
+                        "Reduction of controller medication to avoid side effects",
+                        "Transitioning to PRN SABA-only therapy",
+                        "Referral to an asthma specialist due to a life-threatening event",
+                        "Delaying follow-up until the next symptomatic exacerbation"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Patients who have experienced life-threatening events, such as ICU admission or intubation, meet the criteria for referral to a specialist."
+                },
+                {
+                    "character": "Two Glue-Cans",
+                    "question": "Which of the following clinical patterns most strongly indicates a need for specialist referral for a patient with asthma?",
+                    "options": [
+                        "Requiring one course of oral glucocorticoids in a three-year span",
+                        "Use of a short-acting beta-agonist twice a month",
+                        "Requiring two or more courses of oral glucocorticoids per year",
+                        "Well-controlled symptoms on low-dose inhaled corticosteroids"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "The requirement of two or more courses of oral glucocorticoids within a single year indicates poor control and justifies specialist referral."
+                },
+                {
+                    "character": "Step Ladder (4/5 rungs)",
+                    "question": "At what treatment intensity level should a 10-year-old child with asthma be referred to a specialist if they remain symptomatic?",
+                    "options": [
+                        "Step 1 (SABA PRN)",
+                        "Step 2 (Low-dose ICS)",
+                        "Step 3 (Low-dose ICS-LABA)",
+                        "Step 4 (Medium-dose ICS-LABA)"
+                    ],
+                    "correctOptionIndex": 3,
+                    "explanation": "Referral is recommended when the severity threshold reaches Step 4 for children or Step 5 for adults."
+                },
+                {
+                    "character": "Persistent Molasses",
+                    "question": "How long should a physician typically observe persistent poor asthma control despite adherence to therapy before initiating a specialist referral?",
+                    "options": [
+                        "1 week",
+                        "2 weeks",
+                        "Several months",
+                        "1 year"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Persistence of poor control after several months of optimized therapy is a standard criterion for specialist referral."
+                },
+                {
+                    "character": "Comorbid-Cobra",
+                    "question": "Which of the following comorbid conditions, when complicating asthma management, is a specific indication for a specialist referral?",
+                    "options": [
+                        "Mild seasonal allergic rhinitis",
+                        "Aspirin-Exacerbated Respiratory Disease (AERD)",
+                        "Occasional tension-type headaches",
+                        "Well-controlled essential hypertension"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Complicated comorbidities such as AERD, Allergic Bronchopulmonary Aspergillosis (ABPA), and Vocal Cord Dysfunction require specialist management."
+                },
+                {
+                    "character": "Bio-Logic Puzzle & Thermo-Plaster",
+                    "question": "A patient with severe eosinophilic asthma is being considered for omalizumab or mepolizumab therapy. What is the recommended procedural path?",
+                    "options": [
+                        "Initiation of treatment by a general practitioner",
+                        "Referral to a specialist for assessment of biologic candidacy",
+                        "Switching to oral steroids permanently instead of biologics",
+                        "Discontinuing all other medications before starting biologics"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Candidacy for advanced therapies like biologics or bronchial thermoplasty is an indication for referral to a specialist."
+                }
+            ]
+        }
+    },
+    {
+        "input": "An overview of asthma management in children and adults - UpToDate.pdf",
+        "title": "Subtopic 12: Biologic Therapy for Severe Asthma",
+        "language": "en",
+        "visual_style": "cartoon",
+        "theme": "Professional Educator",
+        "mnemonic_data": {
+            "topic": "Monoclonal Antibodies for Type 2 Inflammation",
+            "facts": [
+                "Omalizumab: Anti-IgE antibody for perennial allergen sensitivity.",
+                "Mepolizumab, Reslizumab, Benralizumab: Anti-IL-5 or IL-5 receptor targeting eosinophilic inflammation.",
+                "Dupilumab: Anti-IL-4 receptor alpha subunit affecting IgE and eosinophils.",
+                "Tezepelumab: Anti-TSLP impacting both Type 2 and non-Type 2 pathways.",
+                "Phenotype assessment (IgE, FeNO, blood eosinophils) is required before treatment.",
+                "Common side effects: Injection-site reactions and headache; rare risk of anaphylaxis."
+            ],
+            "story": "Welcome to the 'Bio-Laboratory of Bubbles' where our Professor, Dr. Chibi, is managing a wild group of lab assistants! First, 'Oh-Man-Liza' (Omalizumab) is trying to catch 'Iggy the Eagle' (IgE) with a giant sticky net because Iggy keeps dropping perennial flowers everywhere. Nearby, the 'Me-Pol-Res-Ben' trio (Mepolizumab, Reslizumab, Benralizumab) are spraying 'Fire Hose 5' (IL-5) at a mob of 'Rosy-Cheeked Eosins' (Eosinophils) who are trying to start a party. 'Do-Pool-Luma' (Dupilumab) is a scuba diver blocking the 'IL-4 Receptor Valve' to stop the IgE and Eosinophil pools from overflowing. Suddenly, 'Tez-the-Tease' (Tezepelumab) zaps the 'TSLP Lightning Bolt' to stop the whole lab from vibrating! Before anyone can work, Dr. Chibi checks their 'Pheno-ID Badges' (Phenotype assessment) which track their Eosinophil levels. Watch out—if the lab equipment breaks, it causes a 'Hammer-Head' (Headache) and a 'Red Injection Spot' on the floor!",
+            "associations": [
+                {
+                    "character": "Oh-Man-Liza",
+                    "medicalTerm": "Omalizumab",
+                    "explanation": "Anti-IgE antibody for perennial allergens."
+                },
+                {
+                    "character": "Me-Pol-Res-Ben Trio",
+                    "medicalTerm": "Mepolizumab, Reslizumab, Benralizumab",
+                    "explanation": "Target IL-5 or its receptor to reduce eosinophilic inflammation."
+                },
+                {
+                    "character": "Do-Pool-Luma",
+                    "medicalTerm": "Dupilumab",
+                    "explanation": "Blocks IL-4 receptor alpha subunit."
+                },
+                {
+                    "character": "Tez-the-Tease",
+                    "medicalTerm": "Tezepelumab",
+                    "explanation": "Anti-TSLP (thymic stromal lymphopoietin) for broad inflammation."
+                },
+                {
+                    "character": "Pheno-ID Badges",
+                    "medicalTerm": "Phenotype Assessment",
+                    "explanation": "Checking blood eosinophils, IgE, and FeNO before starting therapy."
+                },
+                {
+                    "character": "Hammer-Head and Red Spot",
+                    "medicalTerm": "Headache and Injection-site Reactions",
+                    "explanation": "The most common adverse effects of these biologic therapies."
+                }
+            ],
+            "visualPrompt": "A hyper-vibrant 3D Chibi-style medical laboratory scene. In the center, a professional educator character with oversized glasses and a lab coat stands next to a giant floating 'TSLP' lightning bolt. To the left, a girl named Liza is netting a cartoon eagle (IgE). In the background, three characters spray a fire hose labeled 'IL-5' at cute, pink, angry-looking eosinophil cells. The lighting is cinematic and saturated, with Pixar-style textures. A 'Phenotype Checklist' board is visible, and one character in the corner has a comical 'Hammer' hitting their head to symbolize a headache. The entire scene is bright, wacky, and highly detailed."
+        },
+        "visual_prompt": "thought)**Visual Prompt for Image Generation:**\n\n\"A high-clarity, professional medical illustration in a 'polished educational infographic' style, designed for a medical textbook. The scene depicts the 'Bio-Laboratory of Bubbles,' a futuristic clinical lab managed by Dr. Chibi, a professional educator with a calm, scholarly demeanor.\n\nIn the upper-left quadrant, **'Oh-Man-Liza' (Omalizumab)** is depicted as a clinical technician in a lab coat using a shimmering, geometric sticky net to capture **'Iggy the Eagle' (IgE)**, a stylized bird dropping perennial flowers (allergens). \n\nIn the center-right, the **'Me-Pol-Res-Ben' trio** (three synchronized lab assistants) are professionally operating a high-tech apparatus labeled **'Fire Hose 5'**, directing a stream of blue energy at a group of **'Rosy-Cheeked Eosins'** (vividly pink, granular cells) to disperse them.\n\nIn the foreground, **'Do-Pool-Luma' (Dupilumab)** is a sleek, scuba-gear-clad specialist physically blocking a large mechanical valve labeled **'IL-4 Receptor'**, preventing a rising tide of pink and blue fluid from overflowing. Above them, **'Tez-the-Tease' (Tezepelumab)** uses a handheld dampening device to neutralize a jagged **'TSLP Lightning Bolt'** surging from the ceiling.\n\nDr. Chibi stands at the entrance, holding a digital tablet and inspecting the **'Pheno-ID Badges'** (holographic ID cards showing blood eosinophil graphs) of the staff. In the corner, a piece of cracked equipment is labeled with a **'Hammer-Head'** icon (symbolizing headache) next to a localized **'Red Injection Spot'** on the floor. \n\n**Artistic Style:** Professional Educator aesthetic; clean lines, vibrant but clinical color palette, 3D isometric perspective, high-definition textures, and clear pedagogical labeling for each character to ensure medical clarity.\"",
+        "quiz_data": {
+            "quizzes": [
+                {
+                    "character": "Oh-Man-Liza",
+                    "question": "A patient with severe persistent asthma and sensitivity to year-round dust mites is considered for therapy with Omalizumab. What is the specific molecular target of this monoclonal antibody?",
+                    "options": [
+                        "Interleukin-5 (IL-5)",
+                        "Interleukin-4 receptor alpha subunit",
+                        "Free serum Immunoglobulin E (IgE)",
+                        "Thymic stromal lymphopoietin (TSLP)"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Omalizumab (Oh-Man-Liza) is a recombinant DNA-derived humanized IgG1k monoclonal antibody that selectively binds to human immunoglobulin E (IgE), preventing it from binding to mast cells and basophils."
+                },
+                {
+                    "character": "Me-Pol-Res-Ben Trio",
+                    "question": "When managing a patient with severe eosinophilic asthma, which mechanism do Mepolizumab, Reslizumab, and Benralizumab primarily influence to reduce exacerbations?",
+                    "options": [
+                        "IgE class switching in B cells",
+                        "TSLP-mediated dendritic cell activation",
+                        "IL-5 signaling and eosinophil maturation/survival",
+                        "IL-4 and IL-13 signal transduction"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "Mepolizumab and Reslizumab target IL-5 directly, while Benralizumab targets the IL-5 receptor alpha subunit. All three focus on reducing eosinophilic inflammation."
+                },
+                {
+                    "character": "Do-Pool-Luma",
+                    "question": "A physician prescribes Dupilumab for a patient with comorbid asthma and atopic dermatitis. By targeting the IL-4 receptor alpha subunit, which two cytokines are simultaneously inhibited?",
+                    "options": [
+                        "IL-5 and IL-10",
+                        "IL-4 and IL-13",
+                        "IL-1 and TNF-alpha",
+                        "IFN-gamma and IL-2"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Dupilumab (Do-Pool-Luma) binds to the IL-4 receptor alpha subunit, which is shared by both the IL-4 and IL-13 receptor complexes, thereby inhibiting both Type 2 cytokines."
+                },
+                {
+                    "character": "Tez-the-Tease",
+                    "question": "Tezepelumab is unique among asthma biologics because it acts 'upstream' in the inflammatory cascade. Which molecule does it inhibit to impact both Type 2 and non-Type 2 pathways?",
+                    "options": [
+                        "Thymic stromal lymphopoietin (TSLP)",
+                        "Eotaxin-1",
+                        "Major basic protein",
+                        "Leukotriene C4"
+                    ],
+                    "correctOptionIndex": 0,
+                    "explanation": "Tezepelumab (Tez-the-Tease) is an anti-TSLP antibody. TSLP is an epithelial-derived cytokine that initiates multiple downstream inflammatory pathways, making its inhibition effective for various asthma phenotypes."
+                },
+                {
+                    "character": "Pheno-ID Badges",
+                    "question": "Before initiating biologic therapy for Type 2 inflammation, which combination of biomarkers is most commonly used for phenotype assessment?",
+                    "options": [
+                        "C-reactive protein and Procalcitonin",
+                        "IgE levels, FeNO, and blood eosinophil counts",
+                        "Neutrophil count and Sweat Chloride test",
+                        "Sputum culture and ACE levels"
+                    ],
+                    "correctOptionIndex": 1,
+                    "explanation": "Phenotype assessment (Pheno-ID Badges) utilizes biomarkers such as IgE, Fractional exhaled Nitric Oxide (FeNO), and blood eosinophil counts to determine which biologic is most appropriate for the patient."
+                },
+                {
+                    "character": "Hammer-Head and Red Spot",
+                    "question": "While biologic therapies for Type 2 inflammation are generally well-tolerated, what are the most frequently reported adverse effects during clinical trials?",
+                    "options": [
+                        "Hepatotoxicity and jaundice",
+                        "Ototoxicity and tinnitus",
+                        "Injection-site reactions and headache",
+                        "Peripheral neuropathy and paresthesia"
+                    ],
+                    "correctOptionIndex": 2,
+                    "explanation": "The most common side effects for monoclonal antibodies in this class are local injection-site reactions (Red Spot) and headaches (Hammer-Head), though clinicians must also monitor for rare systemic anaphylaxis."
+                }
+            ]
+        }
+    }
+]

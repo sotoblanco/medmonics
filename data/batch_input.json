@@ -1,0 +1,51 @@
+[
+    {
+        "input": "Reanimación cardiopulmonar",
+        "title": "Introduction",
+        "topic": "Como educador médico, mi objetivo es que no solo memorices pasos, sino que comprendas la coreografía de la supervivencia. La Reanimación Cardiopulmonar (RCP) es un proceso incremental: desde el reconocimiento del colapso hasta el manejo avanzado en la unidad de cuidados intensivos. ---",
+        "language": "es",
+        "visual_style": "photorealistic"
+    },
+    {
+        "input": "Reanimación cardiopulmonar",
+        "title": "1. El Escenario del Caos: Fisiopatología del Paro",
+        "topic": "Imagina a un personaje llamado **\"Don Corazón\"**, el director de una orquesta (el cuerpo). Cuando Don Corazón sufre un síncope y deja de dirigir, el flujo sanguíneo se detiene instantáneamente. El órgano más sensible es el cerebro, que empieza a sufrir daños irreversibles tras solo **4 a 6 minutos** de anoxia. En este nivel fundamental, entendemos que el paro cardíaco no es solo un cese del latido, sino un colapso del transporte de oxígeno. La meta de la RCP es actuar como una \"bomba mecánica externa\" que mantenga una presión de perfusión cerebral y coronaria mínima pero vital mientras intentamos reiniciar el sistema. ---",
+        "language": "es",
+        "visual_style": "photorealistic"
+    },
+    {
+        "input": "Reanimación cardiopulmonar",
+        "title": "2. La Tríada del Héroe: Soporte Vital Básico (SVB)",
+        "topic": "Para recordar los pasos iniciales, visualiza a una enfermera llamada **\"Sofía\"** que encuentra a un paciente inconsciente. Ella sigue una secuencia lógica que prioriza la circulación sobre la ventilación. Es aquí donde el aprendizaje incremental se vuelve práctico. No puedes dar fármacos si no has establecido compresiones de alta calidad. | Dato de Alto Impacto (High-Yield) | Valor/Detalle Clave | | :--- | :--- | | **Frecuencia de compresiones** | 100 a 120 por minuto (al ritmo de \"Stayin' Alive\"). | | **Profundidad de compresión** | Al menos 5 cm (2 pulgadas) pero no más de 6 cm. | | **Relación Compresión-Ventilación** | 30:2 (en adultos, con uno o dos reanimadores). | | **Expansión torácica** | Permitir el retroceso completo del tórax para el llenado cardíaco. | | **Interrupciones** | Minimizar a menos de 10 segundos. | ---",
+        "language": "es",
+        "visual_style": "photorealistic"
+    },
+    {
+        "input": "Reanimación cardiopulmonar",
+        "title": "3. El Código de los Ritmos: Soporte Vital Avanzado (SVCA)",
+        "topic": "Una vez que llega el equipo médico, el enfoque se divide según lo que vemos en el monitor. Imagina que el monitor es un televisor que nos dice si el paciente tiene un \"ritmo eléctrico desordenado\" o un \"silencio total\". Para facilitar la creación de mnemotecnias, dividimos los ritmos en dos grupos: 1.  **Los Eléctricos (Desfibrilables):** Fibrilación Ventricular (FV) y Taquicardia Ventricular sin Pulso (TVSP). Aquí el tratamiento estrella es la **descarga eléctrica inmediata**. 2.  **Los Silenciosos (No Desfibrilables):** Asistolia y Actividad Eléctrica sin Pulso (AESP). Aquí el tratamiento es la **RCP de alta calidad y la adrenalina rápida**. ---",
+        "language": "es",
+        "visual_style": "photorealistic"
+    },
+    {
+        "input": "Reanimación cardiopulmonar",
+        "title": "4. El Maletín de la Vida: Farmacología Crítica",
+        "topic": "En esta etapa incremental, añadimos la química al esfuerzo físico. Los medicamentos en RCP tienen roles muy específicos. El personaje clave aquí es la **\"Adrenalina\"**, que actúa como un despertador para los vasos sanguíneos (vasoconstricción) para enviar la poca sangre disponible al cerebro y al corazón. *   **Adrenalina:** Se administra 1 mg cada 3 a 5 minutos. En ritmos no desfibrilables, se da de inmediato; en desfibrilables, tras el segundo choque fallido. *   **Amiodarona/Lidocaína:** Son los \"pacificadores\". Se usan solo en ritmos desfibrilables que no ceden a la electricidad. La primera dosis de Amiodarona es de 300 mg. ---",
+        "language": "es",
+        "visual_style": "photorealistic"
+    },
+    {
+        "input": "Reanimación cardiopulmonar",
+        "title": "5. El Detective de Causas: Las 5 H y las 5 T",
+        "topic": "Un reanimador experto no solo comprime, sino que piensa. Mientras el equipo trabaja, tú debes ser un detective buscando por qué se detuvo el corazón de nuestro paciente, \"Don Corazón\". Si no tratas la causa, el paciente nunca recuperará la circulación espontánea (RCE). **Las 5 H (Problemas Metabólicos/Fluidos):** *   **H**ipovolemia (¿Falta sangre?). *   **H**ipoxia (¿Falta oxígeno?). *   **H**idrogeniones (Acidosis). *   **H**ipo/Hiperpotasemia (Problemas de potasio). *   **H**ipotermia. **Las 5 T (Problemas Mecánicos/Tóxicos):** *   **T**ensión, neumotórax (Aire atrapado en el pulmón). *   **T**aponamiento cardíaco (Líquido alrededor del corazón). *   **T**oxinas (Sobredosis). *   **T**rombosis pulmonar (Embolia). *   **T**rombosis coronaria (Infarto agudo de miocardio). ---",
+        "language": "es",
+        "visual_style": "photorealistic"
+    },
+    {
+        "input": "Reanimación cardiopulmonar",
+        "title": "6. El Despertar: Cuidados Posparo",
+        "topic": "Si logramos el retorno de la circulación espontánea, la historia no termina. El cuerpo ha pasado por una \"tormenta metabólica\". El enfoque ahora es la neuroprotección. Un concepto de alto impacto para exámenes es el **Manejo de la Temperatura por Objetivos (MTO)**. Mantener al paciente entre 32°C y 36°C durante al menos 24 horas puede prevenir que las neuronas mueran por la inflamación posterior a la reoxigenación. Además, debemos evitar la hiperoxia excesiva; queremos que el paciente esté bien oxigenado, pero no \"oxidado\" por radicales libres de oxígeno.",
+        "language": "es",
+        "visual_style": "photorealistic"
+    }
+]
